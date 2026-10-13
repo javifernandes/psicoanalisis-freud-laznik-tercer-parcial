@@ -1,0 +1,16 @@
+{
+  "format": "bookops-md",
+  "version": 1,
+  "book": {
+    "title": "Psicoanálisis Freud — Tercer parcial",
+    "subtitle": "Más allá del principio del placer, segundo dualismo, Edipo, segunda tópica y angustia",
+    "author": "Javier Fernandes",
+    "language": "es"
+  },
+  "structure": {
+    "kind": "numbered-folders-and-files",
+    "partsAreNumberedFolders": true,
+    "chaptersAreNumberedMarkdownFiles": true,
+    "rootReadmeIsMetadataOnly": true
+  }
+}

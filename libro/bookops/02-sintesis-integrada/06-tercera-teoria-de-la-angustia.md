@@ -1,5 +1,23 @@
 # Tercera teoría de la angustia
 
+## El giro en una imagen
+
+```mermaid
+flowchart LR
+  subgraph V2["Segunda teoría"]
+    A["Exigencia pulsional"] --> B["Represión"]
+    B --> C["Libido transformada en angustia"]
+  end
+  subgraph V3["Tercera teoría"]
+    D["Exigencia pulsional"] --> E["Peligro"]
+    E --> F["Angustia-señal en el yo"]
+    F --> G["Represión / defensa"]
+    G --> H["Síntoma"]
+  end
+```
+
+> **Tesis del capítulo.** En la tercera teoría, la angustia deja de ser solamente un producto de la represión: el yo la reproduce como señal para anticipar una situación traumática y poner en marcha la defensa.
+
 ## El cambio de fórmula
 
 En formulaciones anteriores, Freud concebía la angustia como resultado de una transformación: la excitación sexual no tramitada o la libido afectada por la represión se trasmudaba en angustia. En *Inhibición, síntoma y angustia* invierte la relación causal en el caso de las psiconeurosis: no es la represión la que crea la angustia; el yo produce angustia como señal ante un peligro y pone en marcha la defensa.
@@ -26,6 +44,17 @@ La angustia-señal es una pequeña reproducción anticipada de la reacción de a
 
 No es simplemente “menos angustia”. Es un progreso en la organización psíquica: sustituye la irrupción automática por una expectativa que permite actuar.
 
+```mermaid
+flowchart TD
+  A["Incremento de excitación"] --> B{"¿El yo reconoce una condición de peligro?"}
+  B -->|"No / demasiado tarde"| C["Desvalimiento efectivo"]
+  C --> D["Angustia automática"]
+  B -->|"Sí"| E["Pequeña reproducción de angustia"]
+  E --> F["Angustia-señal"]
+  F --> G["Defensa"]
+  G --> H["Evitar o acotar el desborde"]
+```
+
 | Angustia automática | Angustia-señal |
 |---|---|
 | la situación traumática está presente | se anticipa una situación de peligro |
@@ -50,6 +79,18 @@ Esta asociación inaugura una función psíquica:
 3. la señal pone en marcha acciones defensivas;
 4. se intenta evitar el desvalimiento traumático.
 
+```mermaid
+flowchart LR
+  A["Hambre: incremento económico"] --> B["Respuesta automática"]
+  B --> C["Otro cuidador reduce la tensión"]
+  C --> D["Ausencia del objeto"]
+  D --> E["Condición de peligro aprendida"]
+  E --> F["Angustia-señal"]
+  F --> G["Acción defensiva"]
+```
+
+El avance no consiste en eliminar la angustia. Consiste en usar una pequeña reproducción del afecto como información y preparación.
+
 ## Serie de condiciones de peligro
 
 Las condiciones cambian con el desarrollo, pero conservan el peligro de separación o pérdida:
@@ -59,11 +100,32 @@ Las condiciones cambian con el desarrollo, pero conservan el peligro de separaci
 - castración durante la fase fálica;
 - pérdida del amor del superyó o angustia de la conciencia moral.
 
+```mermaid
+flowchart LR
+  A["Desvalimiento económico"] --> B["Pérdida del objeto"]
+  B --> C["Castración"]
+  C --> D["Pérdida del amor del superyó"]
+  A -. "núcleo común" .-> E["Separación + riesgo de desborde"]
+  B -.-> E
+  C -.-> E
+  D -.-> E
+```
+
 La castración adquiere un valor organizador porque permite representar otras pérdidas corporales y separaciones dentro de la serie fálica.
 
 ## Hans: del peligro al síntoma
 
 En la fobia de Juanito, una moción hostil hacia el padre y una moción amorosa hacia la madre participan del conflicto edípico. La amenaza de castración constituye el peligro. El yo produce angustia-señal, reprime la moción y desplaza el peligro hacia el caballo.
+
+```mermaid
+flowchart LR
+  A["Mociones edípicas"] --> B["Peligro de castración"]
+  B --> C["Angustia-señal"]
+  C --> D["Represión"]
+  D --> E["Desplazamiento al caballo"]
+  E --> F["Fobia"]
+  F --> G["El peligro se vuelve evitable"]
+```
 
 El síntoma fóbico ofrece una ventaja defensiva: un peligro pulsional interno, del cual no se puede huir, es sustituido por un objeto exterior evitable. Pero el precio es la limitación de la vida del niño.
 

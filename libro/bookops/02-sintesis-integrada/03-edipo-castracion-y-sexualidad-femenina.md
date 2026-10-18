@@ -1,5 +1,27 @@
 # Edipo, castración y sexualidad femenina
 
+## El recorrido de un vistazo
+
+```mermaid
+flowchart TD
+  A["Primeros cuidados"] --> B["Madre: primer objeto de amor"]
+  C["Identificación primaria con el padre"] --> D["Condiciones del Edipo"]
+  B --> D
+  E["Ley y prohibición del incesto"] --> D
+  D --> F["Organización fálica"]
+  F --> G["Encuentro con la diferencia anatómica"]
+  G --> H["Complejo de castración"]
+  H --> I["Varón: salida y sepultamiento del Edipo"]
+  H --> J["Niña: viraje e ingreso al Edipo"]
+  I --> K["Identificaciones y superyó"]
+  I --> L["Fantasía: Pegan a un niño"]
+  J --> M["Cambio de objeto y de zona"]
+```
+
+El diagrama reúne relaciones lógicas, no una cronología biológica universal. El comienzo es común, pero la función del complejo de castración produce recorridos asimétricos.
+
+> **Tesis del capítulo.** El complejo de castración no tiene el mismo efecto para ambos recorridos: en el varón impulsa la salida del Edipo; en la niña funciona como punto de viraje que posibilita su entrada.
+
 ## Una diferencia que la anatomía no resuelve
 
 Para Freud, la diferencia anatómica no se traduce de manera directa ni completa en diferencia psíquica. La sexualidad infantil es pulsional, se constituye en relación con otros y atraviesa una organización fálica. La pregunta no es simplemente qué órgano posee cada cuerpo, sino cómo se inscriben tener, falta, deseo y prohibición.
@@ -11,6 +33,19 @@ Esta reconstrucción presenta la teoría freudiana y la lectura de la cátedra. 
 Después de las organizaciones oral y sádico-anal, Freud postula una organización genital infantil. Su particularidad es que no hay todavía primado de los genitales en plural, sino primado del falo. La premisa infantil es que todos poseen pene; cuando aparece una diferencia, se la interpreta con la oposición fálico/castrado.
 
 El falo no equivale al pene. Es un referente privilegiado que permite organizar una serie de objetos valiosos, separables o perdibles: pecho, heces, pene, regalos, dinero e hijo. La fase fálica resignifica retroactivamente pérdidas anteriores dentro de una ecuación simbólica.
+
+```mermaid
+flowchart LR
+  A["Pecho"] --> F["Serie de objetos separables"]
+  B["Heces"] --> F
+  C["Pene"] --> F
+  D["Regalo / dinero"] --> F
+  E["Hijo"] --> F
+  F --> G["Significación fálica"]
+  G --> H["Tener / perder / faltar"]
+```
+
+La ecuación no vuelve idénticos esos objetos. Los relaciona porque pueden adquirir un valor fálico y entrar en una serie de separación, intercambio o pérdida.
 
 ## Condiciones del complejo de Edipo
 
@@ -34,6 +69,30 @@ Quedan efectos duraderos:
 - la formación del superyó;
 - la fantasía fundamental “Pegan a un niño”;
 - menosprecio de lo femenino y rechazo de la posición pasiva como posibles consecuencias neuróticas de la amenaza.
+
+## La asimetría en un solo mapa
+
+```mermaid
+flowchart TD
+  A["Comienzo común: madre, fase preedípica y organización fálica"] --> B["Encuentro con la diferencia"]
+  B --> C["Varón: amenaza de perder"]
+  C --> D["Angustia de castración"]
+  D --> E["Abandono de investiduras incestuosas"]
+  E --> F["Sepultamiento del Edipo"]
+  B --> G["Niña: juicio de haber sido perjudicada"]
+  G --> H["Envidia del pene y reproches a la madre"]
+  H --> I["Extrañamiento de la madre"]
+  I --> J["Padre como objeto edípico"]
+  J --> K["Pene → hijo"]
+```
+
+| Operación | Varón | Niña |
+|---|---|---|
+| Fase fálica y Edipo | contemporáneos | la fase preedípica conserva mayor peso |
+| Castración | amenaza de una pérdida posible | lectura de un perjuicio ya ocurrido |
+| Efecto sobre el Edipo | favorece la salida | favorece la entrada |
+| Cambio de objeto | conserva a la madre hasta el sepultamiento | pasa de la madre al padre |
+| Salida | amenaza de castración | menos determinada; Freud menciona la desilusión |
 
 ## El Edipo en la niña: la asimetría
 
@@ -62,6 +121,17 @@ La maternidad funciona en Freud como una solución posible frente a la falta fá
 
 La fantasía de paliza testimonia el pasaje por el Edipo y fija una modalidad de satisfacción. Tiene tres personajes: quien relata o mira, quien castiga y quien es castigado.
 
+```mermaid
+flowchart LR
+  A["1. El padre pega a un niño"] -->|"culpa + regresión"| B["2. Soy pegado por el padre"]
+  B -->|"desfiguración"| C["3. Los niños son pegados"]
+  C -. "forma comunicada" .-> D["Inicio del análisis"]
+  D -. "reconstruye" .-> A
+  A -. "permite construir" .-> B
+```
+
+La flecha superior representa la transformación lógica de la fantasía. Las líneas punteadas muestran el recorrido inverso del análisis: se parte de la tercera fase, se reconstruye la primera y se construye la segunda.
+
 ### Primera fase: “El padre pega a un niño”
 
 El niño castigado es un rival odiado. La significación reconstruida es: “el padre le pega porque me ama a mí”. No es todavía estrictamente sádica ni masoquista.
@@ -75,6 +145,8 @@ Es la fase decisiva, inconsciente y construida en el análisis. La culpa por las
 Es la forma comunicada por el paciente. El agente se vuelve indeterminado, aparecen varios niños y el fantaseador ocupa el lugar de espectador. Aunque parece sádica, la satisfacción sigue siendo masoquista y se enlaza con la masturbación.
 
 La secuencia del análisis no coincide con la cronología: suele partir de la tercera fase, recuperar la primera y construir la segunda. La fantasía fundamental no retorna como un recuerdo reprimido ordinario; permanece fija, monótona y eficaz en síntomas, carácter y vínculos.
+
+> **Para recordar.** La segunda fase es la decisiva: “ser pegado” reúne el castigo por el amor incestuoso con un sustituto regresivo de “ser amado por el padre”.
 
 ## Dos articulaciones decisivas
 

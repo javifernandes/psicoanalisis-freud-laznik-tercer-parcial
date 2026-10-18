@@ -1,5 +1,23 @@
 # Resistencias y obstáculos en la cura
 
+## El mapa de las cinco resistencias
+
+```mermaid
+flowchart TD
+  R["Resistencias"] --> Y["YO"]
+  R --> E["ELLO"]
+  R --> S["SUPERYÓ"]
+  Y --> Y1["Represión"]
+  Y --> Y2["Transferencia"]
+  Y --> Y3["Ganancia secundaria"]
+  E --> E1["Compulsión de repetición"]
+  E1 --> E2["Necesidad de reelaboración"]
+  S --> S1["Necesidad de castigo"]
+  S1 --> S2["Reacción terapéutica negativa"]
+```
+
+> **Distinción decisiva.** Interpretar el sentido reprimido puede debilitar resistencias del yo, pero no basta para modificar automáticamente la insistencia del ello ni la satisfacción punitiva del superyó.
+
 ## Del retorno de lo reprimido a las resistencias estructurales
 
 En el primer modelo clínico, interpretar permite hacer consciente lo inconsciente y levantar la represión. La transferencia puede ser a la vez motor y obstáculo, pero continúa ligada a representaciones reprimidas. La segunda tópica muestra que no toda resistencia proviene de la represión ni se resuelve mediante una interpretación correcta.
@@ -44,6 +62,19 @@ La reacción terapéutica negativa es el empeoramiento que aparece cuando el tra
 
 En el masoquismo moral, el yo ocupa una posición masoquista y el superyó una posición sádica. El vínculo con la pulsión de muerte explica por qué la moral puede operar contra la conservación y contra la cura.
 
+```mermaid
+flowchart LR
+  A["Avance del tratamiento"] --> B["Mejoría"]
+  B --> C["La cura amenaza la satisfacción en la enfermedad"]
+  C --> D["Necesidad inconsciente de castigo"]
+  D --> E["Empeoramiento"]
+  E --> F["Reacción terapéutica negativa"]
+  G["Superyó cruel"] --> D
+  H["Masoquismo moral"] --> D
+```
+
+La reacción no significa que el paciente “decida sabotearse”. Hace visible una economía de satisfacción que permanece muda para el yo consciente.
+
 ## Beneficio primario y secundario
 
 | Concepto | Qué designa | Relación con la resistencia |
@@ -52,6 +83,8 @@ En el masoquismo moral, el yo ocupa una posición masoquista y el superyó una p
 | Ganancia secundaria | ventajas que el yo incorpora una vez instalada la enfermedad | constituye una resistencia yoica |
 
 La necesidad de castigo no es simplemente otra “ventaja” consciente. Pertenece a la economía del superyó y puede encontrar satisfacción en el padecimiento mismo.
+
+> **Atajo de memoria.** Primario: satisfacción pulsional *en* el síntoma. Secundario: ventajas que el yo obtiene *con* el síntoma ya constituido.
 
 ## Cuadro de las cinco resistencias
 
@@ -70,6 +103,18 @@ La necesidad de castigo no es simplemente otra “ventaja” consciente. Pertene
 No conviene todavía convertir en respuesta cerrada los apartados sobre alteración del yo, duración del análisis o roca de base de la castración: falta el trabajo efectivo de clase.
 
 ## Articulaciones acumulativas
+
+```mermaid
+flowchart LR
+  A["Defensa y represión"] --> B["Resistencias del yo"]
+  C["Recordar, repetir y reelaborar"] --> D["Transferencia"]
+  E["Compulsión de repetición"] --> F["Resistencia del ello"]
+  G["Masoquismo moral"] --> H["Resistencia del superyó"]
+  B --> I["Cinco resistencias"]
+  D --> I
+  F --> I
+  H --> I
+```
 
 - Primer parcial: resistencia de represión ↔ defensa, representación inconciliable y formación de síntoma.
 - Segundo parcial: resistencia de transferencia ↔ recordar, repetir y reelaborar; ganancia primaria ↔ satisfacción sustitutiva.

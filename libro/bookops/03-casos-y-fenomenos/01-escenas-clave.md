@@ -2,11 +2,30 @@
 
 Las escenas no funcionan como ilustraciones decorativas. Cada una obliga a Freud a modificar una hipótesis o permite volver visible un mecanismo.
 
+```mermaid
+flowchart TD
+  A["Sueño traumático"] --> P["Límite del cumplimiento de deseo"]
+  B["Fort-da"] --> Q["Repetición y dominio"]
+  C["Transferencia"] --> R["Agieren vs compulsión"]
+  D["Pegan a un niño"] --> S["Fantasía, culpa y masoquismo"]
+  E["Juanito"] --> T["Angustia-señal y fobia"]
+  F["Reacción terapéutica negativa"] --> U["Resistencia del superyó"]
+```
+
 ## Sueño traumático
 
 El soñante retorna repetidamente a la situación del accidente y despierta con terror. La escena contradice la idea de que todo sueño cumple directamente un deseo y protege el dormir. Su repetición intenta producir la ligadura o el apronte angustiado ausentes durante el acontecimiento traumático.
 
 Puntos que no deben faltar: sorpresa, terror, ruptura de la protección antiestímulo, cantidad no ligada, repetición y función preparatoria del sueño.
+
+```mermaid
+flowchart LR
+  A["Sorpresa"] --> B["Sin apronte angustiado"]
+  B --> C["Irrupción no ligada"]
+  C --> D["Sueño repetitivo"]
+  D --> E["Intento de ligadura"]
+  E -->|"falla"| D
+```
 
 ## Juego del fort-da
 
@@ -32,6 +51,15 @@ Su función conceptual es enlazar fantasía, Edipo, castración, fijación y mas
 ## Juanito y el caballo
 
 La fobia permite mostrar la tercera teoría de la angustia. Una exigencia pulsional edípica implica el peligro exterior de castración. El yo produce angustia-señal, reprime y desplaza el peligro hacia el caballo. El objeto fóbico vuelve evitable un peligro que, mientras era interno, no admitía huida.
+
+```mermaid
+flowchart LR
+  A["Exigencia edípica"] --> B["Peligro de castración"]
+  B --> C["Angustia-señal"]
+  C --> D["Represión"]
+  D --> E["Caballo"]
+  E --> F["Evitación fóbica"]
+```
 
 ## Reacción terapéutica negativa
 

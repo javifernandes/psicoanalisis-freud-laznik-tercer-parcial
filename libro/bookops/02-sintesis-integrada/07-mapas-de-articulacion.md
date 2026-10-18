@@ -1,5 +1,19 @@
 # Mapas de articulación acumulativa
 
+## La arquitectura del parcial
+
+```mermaid
+flowchart TD
+  P["4 preguntas"] --> N1["Nueva 1"]
+  P --> N2["Nueva 2"]
+  P --> A1["Nuevo ↔ primer parcial"]
+  P --> A2["Nuevo ↔ segundo parcial"]
+  A1 --> M1["Conservar + diferenciar + mostrar el giro"]
+  A2 --> M2["Conservar + diferenciar + mostrar el giro"]
+```
+
+La articulación no es un quinto tema. Es una operación que debe practicarse dentro de cada núcleo nuevo.
+
 ## Cómo se responde una consigna de articulación
 
 Articular no es yuxtaponer dos resúmenes ni afirmar que dos conceptos son idénticos. Una buena respuesta debe:
@@ -10,7 +24,25 @@ Articular no es yuxtaponer dos resúmenes ni afirmar que dos conceptos son idén
 4. sostener la relación mediante un mecanismo, una escena o un efecto clínico;
 5. cerrar retomando exactamente la consigna.
 
+```mermaid
+flowchart LR
+  A["Concepto anterior"] --> B["Límite o problema"]
+  B --> C["Reformulación nueva"]
+  C --> D["Qué se conserva"]
+  C --> E["Qué cambia"]
+  D --> F["Consecuencia clínica o teórica"]
+  E --> F
+```
+
 ## Contenido nuevo ↔ primer parcial
+
+```mermaid
+flowchart TD
+  T1["VSPT y trauma en dos tiempos"] --> T2["Trauma económico y ligadura"]
+  C1["Principio de constancia"] --> C2["Tarea previa de ligadura"]
+  I1["Primera tópica"] --> I2["Inconsciente estructural"]
+  D1["Defensa frente a representación"] --> D2["Angustia-señal moviliza defensa"]
+```
 
 ### Trauma temprano ↔ trauma en *Más allá*
 
@@ -37,6 +69,15 @@ Articular no es yuxtaponer dos resúmenes ni afirmar que dos conceptos son idén
 - Cambio: se invierte la relación causal entre angustia y represión.
 
 ## Contenido nuevo ↔ segundo parcial
+
+```mermaid
+flowchart TD
+  S1["Sueño: cumplimiento de deseo"] --> S2["Sueño traumático: intento de ligadura"]
+  R1["Agieren / retorno de lo reprimido"] --> R2["Compulsión de repetición"]
+  F1["Fantasía, fijación y síntoma"] --> F2["Pegan a un niño"]
+  Y1["Yo del narcisismo"] --> Y2["Yo de la segunda tópica"]
+  X1["Transferencia como resistencia"] --> X2["Resistencias del ello y superyó"]
+```
 
 ### Sueño como cumplimiento de deseo ↔ sueño traumático
 

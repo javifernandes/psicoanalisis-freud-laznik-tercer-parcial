@@ -4,6 +4,21 @@
 
 La oposición consciente/inconsciente y la equivalencia entre inconsciente y reprimido ya no alcanzan para explicar las resistencias que parten del yo, la satisfacción en la enfermedad ni la compulsión. Freud reordena el aparato como yo, ello y superyó e introduce una teoría de la angustia en la que el yo produce la señal que pone en marcha la defensa.
 
+```mermaid
+flowchart TD
+  A["Resistencia inconsciente del yo"] --> B["Tercer inconsciente"]
+  B --> C["Segunda tópica"]
+  C --> D["Yo"]
+  C --> E["Ello"]
+  C --> F["Superyó"]
+  D --> G["Angustia-señal y defensa"]
+  E --> H["Compulsión y reelaboración"]
+  F --> I["Necesidad de castigo"]
+  H --> J["Cinco resistencias"]
+  I --> J
+  G --> K["Tercera teoría de la angustia"]
+```
+
 ## Teóricos
 
 ### Segunda tópica
@@ -49,6 +64,8 @@ La oposición consciente/inconsciente y la equivalencia entre inconsciente y rep
 - El superyó heredero del Edipo se enlaza con la ley; su afinidad con el ello explica su dimensión cruel y la necesidad de castigo.
 - El complejo de castración articula Edipo, angustia, defensa y síntoma.
 - Las resistencias del ello y del superyó muestran por qué levantar la represión no garantiza la cura.
+
+> **Pregunta organizadora.** Si el paciente conoce el sentido reprimido de su síntoma, ¿por qué puede continuar repitiendo, castigándose o enfermando? El módulo 6 responde distinguiendo instancias y resistencias.
 
 ## Alta probabilidad de evaluación
 

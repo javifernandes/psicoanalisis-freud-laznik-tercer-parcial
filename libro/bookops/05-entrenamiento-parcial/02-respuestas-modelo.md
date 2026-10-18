@@ -28,6 +28,15 @@ En una articulación conviene usar una estructura explícita: **punto de partida
 5. El ello formaliza lo inconsciente no reprimido.
 6. Yo, ello y superyó permiten localizar nuevos obstáculos clínicos.
 
+```mermaid
+flowchart LR
+  A["Resistencia inconsciente"] --> B["El yo no coincide con la conciencia"]
+  B --> C["Tercer inconsciente"]
+  C --> D["Ello"]
+  D --> E["Segunda tópica"]
+  E --> F["Nuevas resistencias"]
+```
+
 ### Desarrollo
 
 Freud formula la segunda tópica porque la distinción entre consciente, preconsciente e inconsciente ya no alcanza para explicar ciertos hechos clínicos. En la primera tópica, el inconsciente dinámico coincide con lo reprimido: representaciones apartadas de la conciencia por la defensa que, sin embargo, insisten en retornar mediante sueños, síntomas y transferencia. Pero durante el tratamiento Freud encuentra resistencias que operan inconscientemente y no pueden atribuirse a lo reprimido, pues lo reprimido procura expresarse. La resistencia debe partir del yo, aunque el paciente no tenga conciencia de ella.
@@ -60,6 +69,15 @@ Compare el sueño como cumplimiento de deseo con los sueños de las neurosis tra
 4. No refuta toda la teoría del sueño: introduce una tarea previa.
 5. Intento retroactivo de ligadura y preparación angustiada.
 
+```mermaid
+flowchart LR
+  A["Sueño de deseo"] --> B["Satisfacción deformada"]
+  B --> C["Protege el dormir"]
+  D["Sueño traumático"] --> E["Repetición con terror"]
+  E --> F["Intento fallido de ligadura"]
+  F --> G["Despertar"]
+```
+
 ### Desarrollo
 
 En *La interpretación de los sueños*, Freud sostiene que el sueño es un cumplimiento alucinatorio de deseo. Un deseo inconsciente infantil se enlaza con restos diurnos y, mediante condensación, desplazamiento y figurabilidad, encuentra una satisfacción deformada. Aunque el contenido manifiesto pueda ser displacentero para el yo, la formación conserva una satisfacción para el sistema inconsciente y protege el dormir.
@@ -91,6 +109,16 @@ Compare la concepción temprana del trauma con la concepción económica de *Má
 3. *Más allá*: cantidad, sorpresa, ruptura y no ligadura.
 4. Continuidad: un exceso exige trabajo al aparato.
 5. Diferencia: recuerdo y sentido versus economía y ligadura.
+
+```mermaid
+flowchart TD
+  A["Primer trauma"] --> B["Vivencia + segundo tiempo"]
+  B --> C["Recuerdo, sentido y defensa"]
+  D["Trauma en Más allá"] --> E["Sorpresa + cantidad"]
+  E --> F["Ruptura y no ligadura"]
+  C -. "problema común: exceso" .-> G["Trabajo exigido al aparato"]
+  F -.-> G
+```
 
 ### Desarrollo
 

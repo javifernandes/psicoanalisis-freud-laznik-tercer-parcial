@@ -43,3 +43,16 @@ Las transcripciones se conservan como material raw. Cada nueva semana se procesa
 4. actualizar los dos mapas de articulación acumulativa;
 5. agregar preguntas y ajustar simulacros;
 6. mantener visibles las dudas y contenidos pendientes.
+
+## Pauta pedagógica y visual
+
+Los capítulos extensos no deben quedar como prosa continua. La pauta editorial es:
+
+- un mapa conceptual de apertura cuando el capítulo contiene tres o más movimientos;
+- diagramas Mermaid para secuencias, bifurcaciones, retornos y relaciones entre instancias;
+- tablas para comparaciones de atributos estables;
+- bloques destacados para tesis, distinciones y atajos de memoria;
+- prosa inmediatamente después de cada visual para explicar qué expresa la flecha y qué relación no debe inferirse;
+- un cierre orientado a la respuesta de parcial.
+
+Los diagramas no sustituyen el argumento. Deben reducir carga cognitiva sin convertir relaciones lógicas en causalidades o cronologías falsas.

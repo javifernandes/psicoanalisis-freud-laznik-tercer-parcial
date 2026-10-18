@@ -42,6 +42,7 @@ Versión iterativa basada en las clases transcriptas hasta el 15 de octubre de 2
 - Recorrido general.
 - Repetición, trauma y ligadura.
 - Segundo dualismo pulsional y masoquismo.
+- Organizaciones del desarrollo sexual.
 - Edipo, castración y sexualidad femenina.
 - Segunda tópica.
 - Resistencias y obstáculos en la cura.

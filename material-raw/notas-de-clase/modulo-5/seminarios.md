@@ -889,3 +889,93 @@ Ello -> Peligro Exterior -> Angustia -> Represión -> Sintoma
 
 pRóxima: capitulos 8 y 10
 
+----
+
+## Clase - 15/10
+
+"Inhibición, Síntoma y Angustia" Texto
+
+Retomamos
+
+3ra teoría. Modifica la relación Angustia vs Represión y Sintoma.
+
+NOTA PARCIAL ! IMPORTANTE!
+
+4 preguntas
+- 2 exclusivas de lo nuevo Modulo 5 y 6. De cualquier bloque (teoricos, praticos, seminario)
+- 2 de lo nuevo articulado (se pueden cruzar los espacios)
+a) 1 articular con algo de la primera parte/parcial de la materia
+b) 1 articular con algo de la segunda parte/parcial de la materia
+
+
+----
+
+Capitulao VIII
+Se pregunta por la "Escencia de la Angustia" el concepto.
+Entrama Angustia con Constitución de lo psiquico.
+
+Sabemos hasta ahroa sobre la angustia
+- es un afecto
+- es displacentera. Tiene Caracter displacentero "específico" que la diferencia de otros afectos.
+- responde a una serie de vias de descarga. Se aloja en el cuerpo, agitación palpitaciones, etc.. (Ver luego NACIMIENTO)
+Esto ya lo sabámos de la 1ra y 2da teoría. Se mantiene, no se va.
+
+Si hay displacer -> Hubo incremento de excitación.
+Ergo... Angustia debe ser la Reproducción de Acciones de Descarga que alguna vez fueron ante un peligro mortal
+Hay Elemento Histórico !
+Quedó la Acción (pasada). Esta definió la característica propia del afecto de angustia.
+La primera experiencia de Peligro (no de displacer) debe ser entonces EL NACIMIENTO !
+No había aparato psíquico ahí. No es TRAUMA !!. No se registra. Pero ... es PELIGRO !
+
+Todo esto es punto crucial de los capítulos 8 y 9
+
+Peligro. Desvalimiento físiológico -> llora, grita, etc. Taquicardia. Lo que luego aparece en angustia !
+
+[Peligro (para la subsistencia) Histórico (nacimiento)]
+|
+V
+Caracterización de la Respuesta al Peligro
+
+Por qué basta con Nacer ?
+- Porque para poder vivir necesitamos del Otro
+- Desvalimiento Fisiológico -> dependencia -> Desvalimiento Psíquico ! (pasaje)
+
+Situación arquetípica de la angustia
+- Cada vez que pasa -> conmmemoración de esa caracterización del peligro.
+
+
+Cual es el NUCLEO GENUINO DEL PELIGRO ?
+El Incremento ECONOMICO de una Cantidad !
+
+
+Tiempo 1
+Hambre -> Respuesta automática Angustia
+
+Tiempo 2
+Lactante
+- Se va la madre (Condición de Peligro) -> Desarrolla Angustia.
+
+Se produce un cambio, un desarrollo importante en este pasaje! En lo psíquico
+
+Roza lo traumático acá la angustia.
+Traumático 1920 por más allá del principio de placer.
+Lo NO LIGADO que irrumpe (en base al factor sorpresa)
+Angustia. Respuesta Automática -> "Angustia automática".
+Pero ....
+Si se puede asociar: Condición de Peligro + Rta Angustia = Aparece lo psíquico !
+Un pequeño desprendimiento de Angustia
+- No es la rta automática
+- hace de Señal !
+- Asocia al peligro con la condición (pérdida del objeto)
+---> "Angustia Señal"
+
+"LA ANGUSTIA ES ENTONCES CONSTITUTIVA"
+Muestra como venismo al mundo. Como Objeto para el otro.
+
+- No hay trauma en el nacimiento
+- No hay pérdida (pero en la madre sí. Pérdida -> Castración)
+- Desvalimiento físico ----> Desvalimiento Psíquico.
+
+AVANCE Psiquico. Poder asociar Condición de Peligro con Angustia Señal.
+
+En lo psíquico la perdida de objeto/muerte -> No tiene representación ! Es Castración !

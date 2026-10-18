@@ -536,7 +536,67 @@ Próxima clase seguimos con Capitulo III
 
 ## Clase - 13/10
 
-Futuro
+Minirepaso
+SuperYo
+Segundo Modelo del Aparato psíquico.
+Particularidad inclusye la dimensión de lo NO LIGADO (pulsión de muerte)
+También la dimensión ICC no reprimido (Ello, primario, primigenio, es decir que la pulsión es lo primero. Luego se asienta el Yo sobre este)
+
+Nota: igual que en el problema económico del masoquismo donde lo primero era lo NO LIGADO.
+
+Yo = instancia mediadora.
+Al final del Capitulo II detecta algo Moral ICC
+
+Moral
+- Conciencia
+- ICC -> SuperYo (parte diferenciada del yo). Tiene doble Origen.
+
+Doble Origen del Yo (IMPORTANTE ! clarificador)
+---
+
+Nota (mía): acá lo interesante sería diferenciar bien las dos ramas, las consecuencias de ambos origenes, porque dan dos mecanismos que pugnan (?) pujan entre ellos en simultaneo. Como dos facetas
+
+A) Heredero del Complejo de Edipo
+- El que ordena (por principio de placer)
+- Instancia de LA LEY
+-- Primera forma "con tu mamá, no" (diría el padre simbólicamente)
+-- Padre (también el está atravesado. Se transmite). Renuncia pulsional -> Si no se renuncia -> CULPA (CC: la diferencia entre ideal del yo y yo actual)
+- Es mezcla, trabaja con un poco de cada una (pulsión de vida y de muerte supongo). Padre de la Historia (totem y tabú)
+
+B) Identificaciónes Iniciales cuando el yo todavía era endeble (no ppio de placer)
+- De manera "directa", no mediada
+- endeble porque entramos al mundo como Objeto PASIVO
+- estas identificaciones son las marcas que nos dan los otros, por ej el nombre.
+- Esta vertiente es subsidiaria del Ello (fuera del PdePlacer). Va a exigit lo contrario, es decir, esta es la cara pulsional que no se deja regir por la ley.
+- Resiste como exigencia
+- Siempre exige más, sin medida, por eso cuanto más se renuncia a algo más severo se pone el SuperYo.
+- Exige "Satisfacción (pulsional) TOTAL". Esto es lo opuesto /contrario a la vertiente A) a la culpa CC.
+- desmezcla Pulsión de muerte. No entra en la ley. Está "desatado". El superyo acá es el sustituto del Ello. <- Esto es el "padre de la prehistoria individual"
+- Se hace presente en análisis al modo de RESISTENCIA. No es igual a cualquier otra resistencia. "Resistencia del SuperYo". La más peligrosa del análisis.
+El nombre que le da luego es "Necesidad de Castigo".
+Freud: "Hay personas (también momentos de análisis diríamos) que al mejorar, empeoran". Llama a esto (importante) "Reacción Terapéutica Negativa". La CURA se vuelve un Peligro (para quién ? para B que exige satisfacción total).
+Causa "Factor Moral ICC". "Sentimiento de Culpa" que se satisface en la enfermedad.
+Nota: el paciente no se siente CULPABLE sino ENFERMO. No es lo mismo que la CULPA de A CC !
+A este "Sentimiento de Culpa" lo asocia también con la "Necesidad de Castigo" (diferentes nombres? aspectos?)
+Responde al "Masoquismo Moral (secundario)". SuperYo se hace sádico, hace sufrir al Yo (el Yo acá es masoquista)
+
+
+El superYo es así una instancia un poco "enloquecedora" por sus dos origenes. Estas 2 exigencias. No hay paz con el superyo. Si o contentamos a B), o a A). Y viceversa.
+
+Lógica: 
+El campo de la ligadura no logra cubrir todo. Siempre hay un resto (lado B)
+Freud luego dice: "No es deseable eliminar al B completamente. (En Análisis terminable e interminable)
+
+Masoquismo Moral:
+- desciende de la Pulsión de Muerte. Por eso es peligroso
+- mezcla de ambas
+-- hay algo erótico pero prevalece la otra dimensión, la de desmezcla, la no erógena. Se resexualiza el Edipo (lo renunciado de este. Incesto)
+- responde al masoquismo (?) que no puede salir pero no es el mismo "Masoquismo Erogeno", porque hay mezcla de ambas.
+
+Nota: Incestuoso en psicoanálisis es el empuje a "lo imposible" !
+En la neurosis se cree que se puede, que alguien puede lo imposible. Mantiene, se queda en B
+
+Próxima: análisis terminable e interminable. Obstáculos y límites al análisis.
 
 ## Clase - 20/10
 

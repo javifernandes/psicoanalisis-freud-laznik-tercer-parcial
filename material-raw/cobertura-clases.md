@@ -1,98 +1,72 @@
-# Cobertura provisoria de clases y bibliografía
+# Cobertura de clases y bibliografía
 
-Estado al 12 de octubre de 2026. Esta matriz registra lo visible en las notas transcriptas hasta:
+Estado al 15 de octubre de 2026. Las notas de los módulos 5 y 6 están unificadas por espacio en los archivos de `modulo-5`; los archivos de `modulo-6` se conservan como placeholders y no deben interpretarse como ausencia de contenido.
 
-- Teóricos: 6 de octubre.
-- Prácticos: 6 de octubre.
-- Seminarios: 8 de octubre.
+## Indicaciones explícitas de evaluación
 
-Los estados no indican si un texto fue leído individualmente, sino cuánto aparece trabajado en las notas de clase.
+- Cuatro preguntas de desarrollo.
+- Dos preguntas exclusivamente sobre contenidos nuevos de los módulos 5 y 6.
+- Una articulación con el tramo del primer parcial.
+- Una articulación con el tramo del segundo parcial.
+- Las preguntas pueden provenir de cualquiera de los tres espacios y cruzarlos.
+- *Análisis terminable e interminable* y *La escisión del yo en el proceso defensivo* quizá no entren por retraso de Prácticos; sí quedan para final o recuperatorio.
 
-## Panorama
+## Criterios de estado
 
-- **Trabajado:** hay desarrollo conceptual identificable en las notas.
-- **Mencionado o articulado:** aparece como lectura, antecedente o relación, pero sin desarrollo suficiente para reconstruir la clase desde las notas.
-- **Pendiente:** no aparece todavía o sólo figura como anuncio de una clase futura.
+- **Trabajado:** existe desarrollo suficiente en clase para producir una primera síntesis.
+- **Iniciado:** se establecieron conceptos centrales, pero falta continuar el texto.
+- **Mencionado:** aparece como antecedente o articulación sin recorrido autónomo.
+- **Condicionado:** su inclusión en el parcial depende de las clases de repaso.
 
 ## Teóricos
 
-| Texto o fragmento | Programa | Estado en las notas | Observación |
-|---|---|---|---|
-| *Más allá del principio de placer*, caps. II y III | Punto 13 | Trabajado | Sueños traumáticos, fort-da, repetición y compulsión de repetición |
-| *Recordar, repetir, reelaborar* | Punto 13 | Mencionado o articulado | El *agieren* y la repetición aparecen desarrollados, pero no como recorrido autónomo del texto |
-| *Más allá del principio de placer*, caps. IV, V y VI | Punto 14 | Trabajado | Protección antiestímulo, trauma, ligadura, pulsión de muerte y segundo dualismo |
-| 29.ª conferencia, *Revisión de la doctrina de los sueños* | Punto 14 | Mencionado | Aparece la revisión de la función del sueño, sin recorrido específico de la conferencia |
-| *El malestar en la cultura*, cap. VI | Punto 14 | Mencionado o articulado | Se usa para el dualismo y la combinación pulsional |
-| *El problema económico del masoquismo* | Puntos 14 y 16 | Trabajado | Principios de nirvana y placer, mezcla pulsional y masoquismo erógeno primario |
-| *El yo y el ello*, caps. I y II | Punto 16 | Trabajado | Tercer inconsciente, ello, génesis y función mediadora del yo |
-| *El yo y el ello*, caps. III y V | Punto 16 | Pendiente en Teóricos | Cap. III y V aparecen trabajados en Prácticos; las próximas clases teóricas probablemente los retomen |
-| *Inhibición, síntoma y angustia*, Addenda A | Punto 16 | Pendiente | Resistencias y contrainvestidura todavía no aparecen desarrolladas |
-| Punto 15: Edipo y castración | Punto 15 | Cubierto en Seminarios | No aparece como bloque autónomo de Teóricos, pero su bibliografía está ampliamente trabajada en Seminarios |
-| *Análisis terminable e interminable*, caps. II, III, V, VI y VIII | Punto 17 | Pendiente | Incluye los fragmentos pp. 222-224 y 242-244 ausentes del dashboard |
-| *La escisión del yo en el proceso defensivo* | Punto 17 | Pendiente | No visible todavía |
-| *Esquema del psicoanálisis*, pp. 205-206 | Punto 17 | Pendiente | Fragmento obligatorio ausente del dashboard |
-| 28.ª conferencia, *La terapia analítica* | Punto 17 | Pendiente | No visible todavía |
+| Texto o eje | Estado | Desarrollo visible |
+|---|---|---|
+| *Más allá del principio de placer*, caps. II–VI | Trabajado | referentes, repetición/compulsión, protección antiestímulo, trauma, ligadura y pulsión de muerte |
+| *Recordar, repetir y reelaborar* | Articulado | *agieren*, transferencia y diferencia con compulsión de repetición |
+| 29.ª conferencia y teoría del sueño | Articulado | fracaso de la función en los sueños traumáticos |
+| *El malestar en la cultura*, cap. VI | Mencionado | segundo dualismo y mezcla pulsional |
+| *El problema económico del masoquismo* | Trabajado | tres masoquismos, mezcla, trasposición y primariedad |
+| *El yo y el ello*, caps. I, II, III y V | Trabajado | tercer inconsciente, yo, ello, superyó, vasallajes y RTN |
+| *Inhibición, síntoma y angustia*, Addenda A | Articulado | cinco resistencias; falta recorrido teórico autónomo |
+| *Análisis terminable e interminable* | Condicionado | anunciado para las clases siguientes |
 
 ## Prácticos
 
-| Texto o fragmento | Programa | Estado en las notas | Observación |
-|---|---|---|---|
-| *Más allá del principio de placer*, caps. I a VI | Práctico VII | Trabajado | Referentes clínicos, energía libre y ligada, trauma y función de ligadura |
-| 32.ª conferencia, *Angustia y vida pulsional*, pp. 98-103 | Práctico VII | Mencionado | Figura entre las lecturas indicadas para realizar individualmente |
-| 29.ª conferencia, *Revisión de la doctrina de los sueños* | Práctico VII | Mencionado | Figura entre las lecturas indicadas para realizar individualmente |
-| *El malestar en la cultura*, cap. VI | Práctico VII | Mencionado o articulado | Hay una articulación breve con el segundo dualismo |
-| *El problema económico del masoquismo*, pp. 166-171 | Práctico VII | Trabajado | Tres formas de masoquismo, mezcla pulsional y primariedad del masoquismo |
-| *El yo y el ello*, caps. I, II, III y V | Práctico VIII | Trabajado | Segunda tópica, superyó, vasallajes, culpa y reacción terapéutica negativa |
-| *El problema económico del masoquismo*, pp. 171-172 | Práctico VIII | Articulado | Masoquismo moral y resistencia del superyó |
-| *Inhibición, síntoma y angustia*, cap. V y Addenda A.a | Práctico VIII | Pendiente | Defensa, castración y cinco resistencias aún no desarrolladas como texto |
-| *La escisión del yo en el proceso defensivo* | Práctico VIII | Pendiente | No visible todavía |
-| *Análisis terminable e interminable*, caps. III, V y VIII | Práctico VIII | Pendiente | No visible todavía |
-| 28.ª conferencia, *La terapia analítica* | Práctico VIII | Pendiente | No visible todavía |
+| Texto o eje | Estado | Desarrollo visible |
+|---|---|---|
+| *Más allá del principio de placer*, caps. I–VI | Trabajado | energía libre/ligada, referentes y función de ligadura |
+| Conferencias 29 y 32 | Mencionado | lecturas individuales y articulaciones |
+| *El malestar en la cultura*, cap. VI | Articulado | combinación de pulsiones |
+| *El problema económico del masoquismo* | Trabajado | masoquismo primario, femenino y moral |
+| *El yo y el ello*, caps. I, II, III y V | Trabajado | segunda tópica, superyó, vasallajes, culpa y RTN |
+| *Inhibición, síntoma y angustia*, cap. V | Iniciado | castración como motor de la defensa y neurosis obsesiva |
+| *Inhibición, síntoma y angustia*, Addenda A.a | Trabajado inicialmente | tres resistencias del yo, una del ello y una del superyó |
+| *La escisión del yo* | Condicionado | posiblemente fuera del parcial |
+| *Análisis terminable e interminable* | Condicionado | posiblemente fuera del parcial |
+| 28.ª conferencia | Pendiente/condicionada | sin trabajo identificable en clase |
 
 ## Seminarios
 
-| Texto o fragmento | Programa | Estado en las notas | Observación |
-|---|---|---|---|
-| *Esquema del psicoanálisis*, pp. 187-194 | Seminario VIII | Mencionado o absorbido | Sus problemas aparecen en el recorrido, pero el texto no está identificado como bloque autónomo |
-| *Inhibición, síntoma y angustia*, pp. 123-124 | Seminario VIII | Mencionado o absorbido | Castración, pérdida y separación aparecen; falta verificar si se trabajó específicamente el fragmento |
-| *La organización genital infantil* | Seminario VIII | Trabajado | Fase fálica, premisa universal del pene, falo y castración |
-| 23.ª conferencia, *Los caminos de la formación de síntoma* | Seminario VIII | Trabajado | Regresión, fijación, realidad psíquica y fantasías primordiales |
-| *Pegan a un niño* | Seminario VIII | Trabajado en profundidad | Tres fases, fantasía fundamental, culpa, regresión y masoquismo |
-| *Psicología de las masas y análisis del yo*, cap. VII | Seminario VIII | Mencionado o absorbido | Identificación primaria muy trabajada, pero sin recorrido autónomo del capítulo |
-| *Algunas consecuencias psíquicas de la diferencia anatómica entre los sexos* | Seminario IX | Trabajado | Integrado al recorrido sobre la sexualidad femenina |
-| 33.ª conferencia, *La feminidad* | Seminario IX | Trabajado | Tres orientaciones y recorrido hacia el Edipo femenino |
-| *El sepultamiento del complejo de Edipo* | Seminario IX | Trabajado | Asimetría, amenaza de castración, identificaciones y cicatrices |
-| *Inhibición, síntoma y angustia*, caps. IV, VII, VIII y XI.B | Seminario X | Iniciado | Ya aparece la inversión de la fórmula, Hans, peligro y angustia señal; faltan los desarrollos siguientes |
-| 32.ª conferencia, *Angustia y vida pulsional*, pp. 75-88 | Seminario X | Pendiente | No visible todavía como texto trabajado |
+| Texto o eje | Estado | Desarrollo visible |
+|---|---|---|
+| *La organización genital infantil* | Trabajado | falo, premisa universal y castración |
+| Condiciones y sepultamiento del Edipo | Trabajado | ley, identificación, castración, entrada/salida y cicatrices |
+| 23.ª conferencia | Trabajado | fantasías primordiales, fijación y formación de síntoma |
+| *Pegan a un niño* | Trabajado en profundidad | tres fases, construcción, culpa, regresión y masoquismo |
+| Identificación en *Psicología de las masas* | Absorbido | identificación primaria como condición del Edipo y del superyó |
+| Sexualidad femenina y 33.ª conferencia | Trabajado | fase preedípica, punto de viraje y tres orientaciones |
+| *Inhibición, síntoma y angustia* | Iniciado con desarrollo central | inversión de fórmula, Hans, peligro, nacimiento, desvalimiento, angustia automática y señal |
+| 32.ª conferencia | Pendiente como recorrido autónomo | sus conceptos empiezan a aparecer en la tercera teoría |
 
-## Textos probablemente pendientes de las próximas clases
+## Prioridades para las clases de repaso
 
-### Prioridad alta
+1. Completar la serie de condiciones de peligro y el cierre de la tercera teoría de la angustia.
+2. Precisar los “referentes de la pulsión de muerte” nombrados en Prácticos.
+3. Confirmar si entran *Análisis terminable e interminable*, escisión del yo y 28.ª conferencia.
+4. Verificar el estatuto exacto del nacimiento: modelo/arquetipo del peligro y relación, no identidad simple, con trauma.
+5. Confirmar alcance y vocabulario esperado para las dos articulaciones acumulativas.
 
-1. *Inhibición, síntoma y angustia* en sus tres usos:
-   - Teóricos: Addenda A, resistencias y contrainvestidura.
-   - Prácticos: cap. V y Addenda A.a.
-   - Seminarios: continuación de los caps. VII, VIII y XI.B.
-2. *Análisis terminable e interminable*.
-3. *La escisión del yo en el proceso defensivo*.
-4. 28.ª conferencia, *La terapia analítica*.
-5. 32.ª conferencia, *Angustia y vida pulsional*, especialmente el tramo del Seminario X.
+## Hipótesis editorial vigente
 
-### Para confirmar si se trabajarán como textos autónomos
-
-- *El yo y el ello*, caps. III y V, en Teóricos.
-- *Esquema del psicoanálisis*, pp. 187-194 y 205-206.
-- *Psicología de las masas y análisis del yo*, cap. VII.
-- 29.ª conferencia, *Revisión de la doctrina de los sueños*.
-- *Recordar, repetir, reelaborar*.
-- *El malestar en la cultura*, cap. VI.
-
-## Hipótesis sobre las clases restantes
-
-Por la secuencia de las notas y el programa, es razonable esperar:
-
-- Teóricos: final de *El yo y el ello*, resistencias estructurales y dirección de la práctica.
-- Prácticos: *Inhibición, síntoma y angustia*, escisión del yo y obstáculos o límites de la cura.
-- Seminarios: desarrollo completo de angustia automática, angustia señal, desvalimiento, pérdida del objeto y 32.ª conferencia.
-
-Esta hipótesis debe actualizarse con cada nueva clase; no reemplaza las indicaciones efectivas de los docentes.
+Hay material suficiente para redactar el núcleo del libro y entrenar simulacros. Los textos pendientes no justifican postergar la escritura: deben aparecer como contenido condicionado y corregirse cuando las clases de repaso estabilicen el recorte final.

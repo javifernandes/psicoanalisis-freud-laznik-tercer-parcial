@@ -352,4 +352,78 @@ Yo = genuino almácigo de la Angustia (parte, inicia, del yo ahora!). Receptor d
 
 (quedamos en capitulo V, pag)
 
+## Clase - 13/10
+
+Analisis Terminable e Interminable, y Escición del Yo, dijo la profe que como no estamos llegando muy bien con tiempos considera que tal vez no entren en este parcial (sí en el final y recupetatorio)
+
+Repaso
+
+Masoquismo Erogeno (genuino): el resto de la mezcla entre P de Vida y P de muerte (sadismo primordial??). Liga de Eros y PdMuerte.
+
+PdeMuerte: transposición al exterior a objetos se sexualiza (?). "Sadismo".
+Si vuelve al yo = masoquismo Secundario.
+
+"Referentes" de PdeMuerte
+- Sentimiento ICC de Culpa
+- .. (había más pero no llegué a anotarlos. Esto parece importante, Nombró "referentes" varias veces !)
+
+Fantasía
+- es la Resexualización del Padre, vinculado con Pegan a un niño.
+- cictatriz del Complejo de Edipo.
+- El Masoquismo Femenino está relacionado con la fantasía !
+
+Pag 172. Atribuye al SuperYo la CC moral !
+---
+
+Seguimos Capitulo V pag 58.
+- Angustia de la CC Moral
+- Angustia de Muerte
+- Reacción Terapeutica Negativa. Factor Moral es MUDO para el paciente. Sentimiento ICC de Culpa
+- Pulsión de Muerte: busca volver a un estado anterio.
+"Pegan a un niño" es la Cicatriz del C de Edipo.
+
+-----
+
+"Inhibición, Síntoma y Angustia". Texto 1926
+
+En la guía enumera todos los antescedentes anteriores de 1er y 2do parcial !! IMPORTANTE ! podrían pedir relacionar!
+Ej
+- Vivencia Sexual Traumatica Prematura
+- 2 tiempos
+- Manuscrito K
+- Fantasía (Mis tesis ...)
+- etc
+
+Pueden pedir articular !
+
+
+CAPITULO 5
+
+Diagrama
+
+Complejo de Castración -> Motor de la Defensa -> Sobre Aspiraciones Edipicas
+
+(3er orden)
+
+pag 109.
+Período de Latencia
+1) Sepultamiento del CdeEdipo
+2) Consolidación del SuperYo
+
+en Neurosis Obsesiva rebasa lo normal
+- SuperYo severo
+- Regresión
+- Represión
+- Formaciones Reactivas
+
+Defensa pone en marcha por exigencia Pulsional con motor "Complejo de Castración".
+
+ADdenda (texto)
+
+Distingue 5 Resistencias !
+- 3 del Yo: 1) de la represión, 2) de transferencia (recordar, repetir, reelaborar) 3) de la Ganancia de la Enfermedad
+- 1 del Ello: 4) Necesidad de la Reelaboración
+- 1 del SuperYo: 5) Necesidad de Castigo. Sentimiento ICC de Culpa.
+
+LEERLO CON LA GUIA !!
 

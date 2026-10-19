@@ -5,8 +5,13 @@
 - **N:** contenido nuevo de módulos 5 y 6.
 - **A1:** contenido nuevo articulado con el primer parcial.
 - **A2:** contenido nuevo articulado con el segundo parcial.
+- **T:** procedencia de Teóricos.
+- **P:** procedencia de Prácticos.
+- **S:** procedencia de Seminarios.
 
 El examen anunciado combina dos preguntas N, una A1 y una A2.
+
+Diez modelos compartidos por otra comisión presentan, además, una distribución constante de una pregunta T, dos P y una S. Los dos códigos son complementarios: por ejemplo, una pregunta puede ser simultáneamente **T–A1**.
 
 ## Contenido nuevo
 
@@ -54,6 +59,42 @@ Las siguientes formas aparecen reiteradamente en modelos históricos disponibles
 - Articule fase fálica y complejo de castración. Relacione con la asimetría edípica.
 
 Los parciales recientes de Altillo están restringidos; estos antecedentes sirven para estudiar operaciones de consigna, no para afirmar que se repetirán.
+
+## Formulaciones aportadas por los diez modelos de otra comisión
+
+La transcripción completa se conserva en `material-raw/investigacion-parciales/modelos-otra-comision.md`. Estas son las variantes que conviene incorporar al entrenamiento porque agregan un ángulo o una formulación no suficientemente visible en el banco anterior:
+
+### Teóricos
+
+1. **T–A1 —** Fundamente la afirmación: “Todo reprimido es inconsciente, pero no todo inconsciente es, por serlo, reprimido”.
+2. **T–A1 —** Explique por qué la compulsión de repetición en transferencia cuestiona el imperio irrestricto del principio del placer.
+3. **T–A2 —** ¿Por qué los sueños traumáticos obligan a reformular la tesis del sueño como cumplimiento de deseo sin abandonarla por completo?
+4. **T–A1 —** Reformule la noción de trauma en *Más allá del principio de placer* y diferénciela de las primeras investigaciones freudianas.
+
+### Prácticos
+
+1. **P–N —** Identifique los tres referentes clínicos de *Más allá del principio de placer* y explique qué problema introduce cada uno.
+2. **P–A1 —** Articule y diferencie inconsciente dinámico e inconsciente estructural. ¿Qué hecho clínico exige introducir este último?
+3. **P–N —** Explique la génesis del superyó y caracterice sus dos dimensiones.
+4. **P–N —** Explique la frase “Ahora vemos al yo en su potencia y en su endeblez” y vincúlela con sus tres vasallajes.
+5. **P–N —** Ordene las cinco resistencias a partir de la segunda tópica y distinga su procedencia en yo, ello y superyó.
+6. **P–A2 —** Compare la compulsión de repetición de 1920 con la repetición transferencial de *Recordar, repetir, reelaborar*.
+
+### Seminarios
+
+1. **S–N —** Relacione fase fálica, complejo de Edipo y complejo de castración en el varón.
+2. **S–N —** Desarrolle la fase preedípica en la niña y sus consecuencias para el devenir de la sexualidad femenina.
+3. **S–A1 —** Compare la segunda y la tercera teorías de la angustia: origen, relación con la represión y función de la señal.
+
+## Prioridad sugerida por recurrencia
+
+| Prioridad | Familias | Motivo |
+|---|---|---|
+| **Muy alta** | sueño traumático; trauma; inconsciente; angustia; Edipo/sexualidad femenina | cada familia aparece en cinco o seis de los diez modelos |
+| **Alta** | fort-da; yo y vasallajes; resistencias | cada familia aparece tres veces |
+| **Media, pero estructural** | superyó; dos repeticiones; tres referentes de *Más allá* | aparecen menos, pero organizan conexiones con varios núcleos |
+
+La frecuencia sirve para ordenar el repaso, no para descartar temas menos repetidos ni para predecir preguntas.
 
 ## Matriz de cobertura
 

@@ -28,6 +28,26 @@ Consulta realizada en octubre de 2026 sobre la sección “Psicoanálisis Freud�
 - En varios modelos, al menos dos consignas requieren comparar o articular momentos teóricos.
 - Los parciales 2018–2025 listados en el índice están restringidos a colaboradores; su existencia no permite verificar su contenido ni atribuirles el formato actual.
 
+## Modelos compartidos por otra comisión
+
+El 19 de octubre de 2026 se incorporó la transcripción de diez modelos recibidos mediante fotografías. El documento distingue las preguntas por espacio mediante colores y aporta una regularidad que Altillo no permitía comprobar:
+
+- los diez modelos tienen una pregunta de Teóricos, dos de Prácticos y una de Seminarios;
+- la muestra reúne cuarenta preguntas: 10 T, 20 P y 10 S;
+- sueño, trauma, inconsciente, angustia y Edipo son las familias más reiteradas;
+- comparación y articulación entre momentos teóricos son operaciones centrales.
+
+Véase `modelos-otra-comision.md` para la transcripción, procedencia, clasificación y frecuencias.
+
+### Dos ejes que deben superponerse
+
+La distribución por espacio y el formato informado en clase no son alternativas. Describen aspectos diferentes de una misma mesa:
+
+1. **procedencia:** 1 Teóricos + 2 Prácticos + 1 Seminarios;
+2. **operación anunciada actualmente:** 2 preguntas sobre contenidos nuevos + 1 articulación con el primer parcial + 1 articulación con el segundo.
+
+Los modelos históricos no bastan para demostrar que ambas distribuciones se mantendrán sin cambios, pero permiten diseñar simulacros que entrenen simultáneamente las dos exigencias.
+
 ## Criterio de uso
 
 Los parciales anteriores no definen el programa ni sustituyen la indicación docente. Se usan para:

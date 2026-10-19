@@ -20,7 +20,7 @@ La indicación de clase más reciente establece cuatro preguntas:
 - una articulación con contenidos del primer parcial;
 - una articulación con contenidos del segundo parcial.
 
-Pueden cruzarse Teóricos, Prácticos y Seminarios. El libro está organizado para entrenar esa operación y no como tres resúmenes independientes.
+Una muestra de diez modelos compartidos por otra comisión agrega una segunda regularidad: todos contienen una pregunta de Teóricos, dos de Prácticos y una de Seminarios. Ambas distribuciones describen ejes distintos y pueden superponerse: **procedencia de la pregunta** y **operación conceptual solicitada**. El libro entrena ambas sin convertir los tres espacios en resúmenes aislados.
 
 ## Estado editorial
 

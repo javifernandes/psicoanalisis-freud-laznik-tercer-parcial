@@ -9,7 +9,7 @@ flowchart LR
     B --> C["Libido transformada en angustia"]
   end
   subgraph V3["Tercera teoría"]
-    D["Exigencia pulsional"] --> E["Peligro"]
+    D["Exigencia pulsional<br/>proveniente del ello"] --> E["Peligro"]
     E --> F["Angustia-señal en el yo"]
     F --> G["Represión / defensa"]
     G --> H["Síntoma"]
@@ -24,7 +24,7 @@ En formulaciones anteriores, Freud concebía la angustia como resultado de una t
 
 La fórmula didáctica es:
 
-> Exigencia pulsional → peligro → angustia-señal en el yo → defensa/represión → síntoma.
+> Exigencia pulsional proveniente del ello → peligro → angustia-señal en el yo → defensa/represión → síntoma.
 
 La inversión no borra todo lo anterior. La angustia continúa siendo un afecto displacentero con vías corporales de descarga. Lo nuevo es su función de señal y su lugar estructural en la constitución y defensa del yo.
 

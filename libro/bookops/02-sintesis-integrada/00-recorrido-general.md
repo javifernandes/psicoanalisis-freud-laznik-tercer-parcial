@@ -94,13 +94,13 @@ En la segunda teoría, la serie podía formularse como exigencia pulsional, repr
 
 ```mermaid
 flowchart LR
-  A["Exigencia pulsional"] --> B["Situación de peligro"]
+  A["Exigencia pulsional<br/>proveniente del ello"] --> B["Situación de peligro"]
   B --> C["Angustia señal en el yo"]
   C --> D["Defensa / represión"]
   D --> E["Formación de síntoma"]
 ```
 
-Las notas de Seminarios ya permiten formular el punto de partida: el yo es el genuino almácigo de la angustia, la castración funciona como situación de peligro y el síntoma intenta evitar un desarrollo traumático. Falta todavía completar la serie entre nacimiento, desvalimiento, pérdida del objeto, angustia automática y angustia señal.
+La exigencia pulsional proviene del ello y confronta al yo con una situación de peligro. El yo es el genuino almácigo de la angustia: produce la señal, pone en marcha la defensa y participa en la formación del síntoma. La castración funciona como una de esas condiciones de peligro.
 
 ## Cómo leer los capítulos siguientes
 

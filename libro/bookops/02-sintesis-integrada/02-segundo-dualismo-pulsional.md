@@ -2,22 +2,25 @@
 
 ## Por qué el primer dualismo deja de alcanzar
 
-El primer dualismo oponía pulsiones de autoconservación o yoicas y pulsiones sexuales. La introducción del narcisismo volvió inestable esa oposición: el yo también puede ser investido libidinalmente y funcionar como objeto.
+El primer dualismo oponía **pulsiones de autoconservación** y **pulsiones sexuales**. Freud también llamó “pulsiones yoicas” a las primeras en su terminología temprana, porque estaban al servicio de la conservación del individuo. En este contexto, por lo tanto, “yoicas” y “de autoconservación” nombran el mismo polo del dualismo.
+
+La introducción del narcisismo volvió inestable esa oposición: el yo también puede ser investido por la libido sexual y funcionar como objeto.
 
 La distinción entre libido yoica y libido de objeto describe desplazamientos de la libido, pero no constituye un dualismo entre fuerzas de naturaleza diferente. Ambas son libidinosas.
 
 ```mermaid
-flowchart LR
-  A["Pulsiones yoicas / autoconservación"] --> C["Libido yoica"]
-  B["Pulsiones sexuales"] --> D["Libido de objeto"]
-  C --> E["Eros / pulsiones de vida"]
-  D --> E
-  F["Tendencia desligante y repetitiva"] --> G["Pulsión de muerte"]
-  E --> H["Segundo dualismo"]
-  G --> H
+flowchart TD
+  A["Primer dualismo"] --> B["Autoconservación<br/>llamadas 'yoicas' en la terminología temprana"]
+  A --> C["Pulsiones sexuales"]
+  B --> D["Narcisismo: el yo también puede recibir libido"]
+  C --> D
+  D --> E["Libido yoica ↔ libido de objeto<br/>dos localizaciones de la libido sexual"]
+  E --> F["Eros / pulsiones de vida"]
+  G["Pulsión de muerte<br/>tendencia desligante y repetitiva"] --> H["Segundo dualismo"]
+  F --> H
 ```
 
-> **Distinción decisiva.** Libido yoica y libido de objeto son dos localizaciones de la libido, no dos clases fundamentales de pulsión.
+> **No confundir.** “Pulsiones yoicas” es una denominación temprana de las pulsiones de autoconservación. “Libido yoica” es libido sexual investida en el yo. Libido yoica y libido de objeto son dos localizaciones de la misma libido, no dos clases fundamentales de pulsión.
 
 El segundo dualismo opone \concept{pulsiones de vida} y \concept{pulsiones de muerte}. Eros liga, reúne y produce unidades cada vez mayores. La pulsión de muerte desliga, desagrega e insiste más allá del principio del placer.
 

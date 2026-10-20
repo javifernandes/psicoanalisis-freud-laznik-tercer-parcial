@@ -64,9 +64,9 @@ La pulsión de muerte no debe imaginarse como una voluntad consciente de morir n
 
 | Primer dualismo | Reordenamiento narcisista | Segundo dualismo |
 |---|---|---|
-| Pulsiones yoicas / de autoconservación | Libido yoica / libido de objeto | Pulsiones de vida / pulsiones de muerte |
+| Autoconservación —también llamadas “yoicas” en la terminología temprana— / pulsiones sexuales | Dos destinos de la libido sexual: libido yoica / libido de objeto | Pulsiones de vida / pulsiones de muerte |
 
-El narcisismo había mostrado que una parte de las antiguas pulsiones yoicas era libidinosa. La oposición entre pulsiones yoicas y sexuales ya no podía sostenerse como dualismo fundamental. Freud reúne la libido yoica y la libido de objeto bajo Eros y sitúa frente a ellas la pulsión de muerte.
+“Pulsiones yoicas” no debe confundirse con “libido yoica”: el primer término era otro nombre para las pulsiones de autoconservación; el segundo designa libido sexual investida en el yo. El narcisismo mostró precisamente que el yo también podía ser objeto de la libido. Por eso la oposición temprana entre autoconservación y sexualidad ya no podía sostenerse como dualismo fundamental. Freud reúne la libido yoica y la libido de objeto bajo Eros y sitúa frente a ellas la pulsión de muerte.
 
 Pero vida y muerte no aparecen clínicamente en estado puro. Se presentan mezcladas en proporciones variables. El problema deja de ser solamente qué pulsión actúa y pasa a incluir cómo se mezclan, se desmezclan y encuentran destinos.
 

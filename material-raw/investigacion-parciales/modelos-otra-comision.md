@@ -10,7 +10,7 @@ El documento usa un código de colores que aquí se conserva mediante etiquetas:
 - **P:** Prácticos, resaltado violeta;
 - **S:** Seminarios, resaltado amarillo.
 
-Las fotografías contienen diez modelos de cuatro preguntas. Sólo el modelo 5 identifica “Tema 1 – 2024” y el modelo 10 consigna 2021. No se atribuye año a los restantes. La pregunta 2 del modelo 5 está dividida entre dos fotografías y se reconstruyó por continuidad textual.
+Las fotografías contienen diez modelos de cuatro preguntas. En esta fuente, sólo el modelo 5 identifica “Tema 1 – 2024” y el modelo 10 consigna 2021. Un PDF incorporado posteriormente permitió identificar coincidencias con temas de 2022 y 2024; se conserva aquí la transcripción original y se registra el cruce en `parciales-2022-2025-pdf.md`. La pregunta 2 del modelo 5 está dividida entre dos fotografías y se reconstruyó por continuidad textual.
 
 ## Modelo 1
 

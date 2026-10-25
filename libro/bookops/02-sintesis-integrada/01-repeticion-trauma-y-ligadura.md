@@ -49,7 +49,7 @@ Freud observa que el niño arroja un objeto y acompaña su desaparición con un 
 
 Si se considera la secuencia completa, puede reconocerse una ganancia de placer. El niño convierte una experiencia pasiva —la partida de la madre— en una acción que él mismo dirige. Se apodera de la situación y escenifica partida y regreso.
 
-Pero el niño repite con mayor frecuencia el primer acto, la desaparición. Esa insistencia impide reducir todo el juego a la alegría del retorno.
+La **ganancia directa de placer** se localiza con claridad en el segundo acto, el *da*: el objeto reaparece y el niño recibe con alegría su retorno. Esa satisfacción permite comprender el juego completo bajo el principio del placer. Sin embargo, el niño repite con mayor frecuencia y también de manera autónoma el primer acto, la desaparición. Esa insistencia impide reducir todo el juego a la alegría del retorno.
 
 ```mermaid
 flowchart TD
@@ -63,6 +63,8 @@ Las notas proponen dos puntuaciones complementarias:
 
 - si se acentúa el juego completo, hay dominio de la experiencia y ganancia de placer;
 - si se acentúa la repetición del *fort*, aparece una insistencia que no se explica por el placer del regreso.
+
+> **Pregunta que apareció en 2025.** ¿En qué instancia del juego hay una ganancia directa de placer? En el *da*, cuando el objeto vuelve. El problema que abre *Más allá* no es negar esa ganancia, sino explicar la repetición autónoma y más frecuente del *fort*.
 
 El segundo juego, frente al espejo, desplaza además la escena: ahora es el propio niño quien aparece y desaparece. La repetición participa de una separación respecto de la madre y de una posición más activa del sujeto.
 

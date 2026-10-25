@@ -29,6 +29,7 @@ Diez modelos compartidos por otra comisión presentan, además, una distribució
 12. **N —** Articule sentimiento inconsciente de culpa, necesidad de castigo y reacción terapéutica negativa.
 13. **N —** Diferencie angustia automática y angustia-señal.
 14. **N —** Explique la tercera teoría de la angustia mediante el caso Juanito.
+15. **N —** En el juego infantil, ¿dónde se produce una ganancia directa de placer? Diferencie el juego completo fort-da de la repetición autónoma y más frecuente del fort.
 
 ## Articulación con el primer parcial
 
@@ -37,6 +38,9 @@ Diez modelos compartidos por otra comisión presentan, además, una distribució
 3. **A1 —** Compare el inconsciente de la primera tópica con el inconsciente estructural de *El yo y el ello*.
 4. **A1 —** Explique qué cambia en la relación entre defensa, represión y angustia en la tercera teoría.
 5. **A1 —** Relacione representación, monto de afecto y cantidades no ligadas. Señale por qué no son equivalentes.
+6. **A1 —** Reconstruya tres nociones de trauma: trauma psíquico y afecto no abreaccionado; trauma sexual en dos tiempos y viraje hacia la realidad psíquica; trauma económico en *Más allá*. Precise continuidades y diferencias.
+7. **A1 —** Explique la pulsión mediante el chupeteo: apuntalamiento, zona erógena, autoerotismo y separación respecto de la necesidad.
+8. **A1 —** Desarrolle represión primordial, represión propiamente dicha y retorno de lo reprimido. ¿Qué fuerzas sostienen la represión?
 
 ## Articulación con el segundo parcial
 
@@ -46,6 +50,7 @@ Diez modelos compartidos por otra comisión presentan, además, una distribució
 4. **A2 —** Compare el yo del narcisismo con el yo de la segunda tópica.
 5. **A2 —** Relacione transferencia y resistencia yoica con las resistencias del ello y del superyó.
 6. **A2 —** Articule complejo de Edipo, identificación y génesis del superyó.
+7. **A2 —** Explique cómo la transferencia puede funcionar simultáneamente como motor de la cura y como resistencia.
 
 ## Preguntas recuperadas de parciales Laznik
 
@@ -96,6 +101,21 @@ La transcripción completa se conserva en `material-raw/investigacion-parciales/
 
 La frecuencia sirve para ordenar el repaso, no para descartar temas menos repetidos ni para predecir preguntas.
 
+## Ajuste a partir de los temas de 2025
+
+Los dos temas más recientes disponibles no introducen un programa distinto, pero afinan qué operación se espera dentro de cada núcleo:
+
+| Núcleo | Formulación que conviene entrenar |
+|---|---|
+| Fort-da | localizar la ganancia directa en el *da* y explicar por qué no resuelve la repetición del *fort* |
+| Trauma | no saltar de una única teoría temprana a 1920: reconstruir primera, segunda y tercera noción |
+| Inconsciente | definir el tercer inconsciente y compararlo con el dinámico |
+| Sueño | precisar qué función anterior al cumplimiento de deseo revelan los sueños traumáticos |
+| Yo | no enumerar solamente los vasallajes: explicar la potencia y endeblez del yo |
+| Edipo | sostener la asimetría mediante los efectos opuestos del complejo de castración |
+
+El tema A de 2024 sobre transferencia, chupeteo y fases de la represión se usa como entrenamiento acumulativo. Su composición es atípica respecto de los demás modelos, por lo que no eleva esos ejes a prioridad máxima por sí sola.
+
 ## Matriz de cobertura
 
 | Pregunta | Tipo | Núcleo nuevo | Texto anterior articulado | Estado |
@@ -105,8 +125,8 @@ La frecuencia sirve para ordenar el repaso, no para descartar temas menos repeti
 | Asimetría edípica | N | Edipo y sexualidad femenina | — | síntesis disponible |
 | Segunda tópica | N | *El yo y el ello* | — | síntesis disponible |
 | Cinco resistencias | N | Addenda de *ISA* | — | síntesis disponible |
-| Tercera angustia | N | *ISA* | — | versión en curso |
-| Dos traumas | A1 | trauma económico | VSPT y dos tiempos | esquema disponible |
+| Tercera angustia | N | *ISA* | — | síntesis disponible |
+| Tres nociones de trauma | A1 | trauma económico | trauma psíquico; VSPT, dos tiempos y realidad psíquica | esquema a consolidar con el repaso |
 | Dos tópicas | A1 | ICC estructural | ICC dinámico | esquema disponible |
 | Dos teorías del sueño | A2 | sueño traumático | cumplimiento de deseo | esquema disponible |
 | Dos repeticiones | A2 | compulsión | transferencia/*agieren* | esquema disponible |

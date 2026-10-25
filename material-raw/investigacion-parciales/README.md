@@ -48,6 +48,19 @@ La distribución por espacio y el formato informado en clase no son alternativas
 
 Los modelos históricos no bastan para demostrar que ambas distribuciones se mantendrán sin cambios, pero permiten diseñar simulacros que entrenen simultáneamente las dos exigencias.
 
+## PDF de parciales 2022-2025
+
+El 25 de octubre de 2026 se revisó un PDF escaneado de quince páginas con temas atribuidos a 2022, 2024 y 2025. Después de descontar duplicados, la fuente:
+
+- permite fechar varios modelos que ya circulaban sin año;
+- aporta dos temas de 2025, el antecedente más reciente del corpus;
+- confirma la recurrencia de sueño traumático, trauma, tercer inconsciente, yo, angustia, repetición y Edipo;
+- agrega una pregunta específica sobre la ganancia directa de placer en el juego infantil;
+- exige distinguir tres nociones de trauma;
+- incorpora un tema acumulativo de 2024 con transferencia, pulsión/chupeteo y fases de la represión.
+
+Véase `parciales-2022-2025-pdf.md` para la transcripción controlada y el registro de duplicados. El PDF original no se publica.
+
 ## Criterio de uso
 
 Los parciales anteriores no definen el programa ni sustituyen la indicación docente. Se usan para:

@@ -58,6 +58,22 @@ Este simulacro cumple simultáneamente **1 T + 2 P + 1 S** y **2 N + 1 A1 + 1 A2
 
 Este simulacro también cumple ambas distribuciones. Su dificultad está en que ninguna respuesta se resuelve mediante una enumeración: todas exigen reconstruir un problema y mostrar una transformación.
 
+## Simulacro 7 — variaciones observadas en 2025
+
+1. Explique la asimetría edípica entre el varón y la niña. Ubique el efecto diferente del complejo de castración en cada recorrido.
+2. Durante el juego infantil existe una instancia en la que el niño recibe una ganancia directa de placer. Localícela y explique por qué esa ganancia no alcanza para dar cuenta de la repetición del fort.
+3. Describa el “tercer inconsciente” y relaciónelo con el inconsciente dinámico, marcando semejanzas y diferencias.
+4. Desarrolle la noción económica del trauma en *Más allá del principio de placer* y relaciónela con dos formulaciones anteriores del trauma.
+
+## Simulacro 8 — segundo tema observado en 2025
+
+1. Explique la potencia y la endeblez del yo. Desarrolle sus tres vasallajes.
+2. Compare la segunda y la tercera teoría de la angustia, atendiendo especialmente a la relación causal entre angustia y represión.
+3. Explique qué giro introducen los sueños traumáticos en la doctrina del sueño como cumplimiento de deseo. Distinga deseo reprimido de tarea de ligadura.
+4. ¿Por qué la compulsión de repetición en transferencia cuestiona el imperio irrestricto del principio del placer? Diferencie *agieren*, retorno de lo reprimido e insistencia de lo no ligado.
+
+Estos simulacros conservan las operaciones de los temas de 2025, pero amplían las consignas para hacer explícitos los puntos que deberían aparecer en una respuesta completa.
+
 ## Método de resolución
 
 Para cada pregunta:

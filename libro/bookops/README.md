@@ -56,6 +56,7 @@ Versión iterativa basada en las clases transcriptas hasta el 15 de octubre de 2
 - Banco de preguntas por tipo.
 - Respuestas modelo.
 - Cuatro simulacros con la estructura anunciada.
+- Machete de repaso express en cuatro carillas, listo para imprimir doble faz.
 
 ## Criterio de trabajo
 

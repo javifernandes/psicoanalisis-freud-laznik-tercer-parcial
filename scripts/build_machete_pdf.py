@@ -1,364 +1,139 @@
 from pathlib import Path
 
 from reportlab.lib import colors
-from reportlab.lib.enums import TA_CENTER, TA_LEFT
+from reportlab.lib.enums import TA_CENTER
 from reportlab.lib.pagesizes import A4
 from reportlab.lib.styles import ParagraphStyle
 from reportlab.lib.units import mm
-from reportlab.platypus import (
-    BaseDocTemplate,
-    Frame,
-    KeepTogether,
-    PageBreak,
-    PageTemplate,
-    Paragraph,
-    Spacer,
-    Table,
-    TableStyle,
-)
-
+from reportlab.platypus import BaseDocTemplate, Frame, PageBreak, PageTemplate, Paragraph, Spacer
 
 ROOT = Path(__file__).resolve().parents[1]
 OUT = ROOT / "output" / "pdf" / "machete-tercer-parcial.pdf"
 OUT.parent.mkdir(parents=True, exist_ok=True)
-
 PAGE_W, PAGE_H = A4
-MARGIN_X = 10 * mm
-MARGIN_TOP = 12 * mm
-MARGIN_BOTTOM = 10 * mm
-COL_W = PAGE_W - 2 * MARGIN_X
-
-INK = colors.HexColor("#172033")
-ACCENT = colors.HexColor("#7A2138")
-ACCENT_2 = colors.HexColor("#234C6B")
-PALE = colors.HexColor("#F0F3F6")
-PALE_RED = colors.HexColor("#F6EAED")
-LINE = colors.HexColor("#9BA6B2")
+MX, MT, MB = 13 * mm, 10 * mm, 10 * mm
+INK, WINE, BLUE = colors.HexColor("#172033"), colors.HexColor("#7A2138"), colors.HexColor("#234C6B")
+MUTED, RULE = colors.HexColor("#5C6570"), colors.HexColor("#B8C0C9")
 
 
-def style(name, **kwargs):
-    base = dict(
-        name=name,
-        fontName="Helvetica",
-        fontSize=8.4,
-        leading=10,
-        textColor=INK,
-        spaceAfter=1.5,
-        allowWidows=0,
-        allowOrphans=0,
-    )
-    base.update(kwargs)
+def st(name, **kw):
+    base = dict(name=name, fontName="Helvetica", fontSize=10, leading=13,
+                textColor=INK, spaceAfter=3.2, allowWidows=0, allowOrphans=0)
+    base.update(kw)
     return ParagraphStyle(**base)
 
 
-BODY = style("body")
-BULLET = style("bullet", leftIndent=7, firstLineIndent=-5, bulletIndent=0, spaceAfter=0.8)
-H1 = style(
-    "h1",
-    fontName="Helvetica-Bold",
-    fontSize=14,
-    leading=15.5,
-    textColor=ACCENT,
-    alignment=TA_CENTER,
-    spaceAfter=5,
-)
-H2 = style(
-    "h2",
-    fontName="Helvetica-Bold",
-    fontSize=10,
-    leading=11.4,
-    textColor=colors.white,
-    backColor=ACCENT_2,
-    borderPadding=(2.5, 4, 2.5, 4),
-    spaceBefore=3,
-    spaceAfter=3,
-)
-H3 = style(
-    "h3",
-    fontName="Helvetica-Bold",
-    fontSize=8.8,
-    leading=10,
-    textColor=ACCENT,
-    spaceBefore=2.5,
-    spaceAfter=1.3,
-)
-CALLOUT = style(
-    "callout",
-    fontName="Helvetica-Bold",
-    fontSize=8.2,
-    leading=9.7,
-    backColor=PALE_RED,
-    borderColor=ACCENT,
-    borderWidth=0.6,
-    borderPadding=4,
-    spaceBefore=2,
-    spaceAfter=3,
-)
-SMALL = style("small", fontSize=7.3, leading=8.5, spaceAfter=0.5)
-FOOT = style("foot", fontSize=6.2, leading=7, textColor=colors.HexColor("#5C6570"), alignment=TA_CENTER)
+TITLE = st("title", fontName="Helvetica-Bold", fontSize=15.5, leading=17,
+           textColor=WINE, alignment=TA_CENTER, spaceAfter=5)
+QUESTION = st("question", fontName="Helvetica-Bold", fontSize=12, leading=14,
+              textColor=BLUE, spaceBefore=4, spaceAfter=2.5)
+BODY = st("body")
+THESIS = st("thesis", fontName="Helvetica-Bold", fontSize=10.2, leading=12.8,
+            textColor=WINE, leftIndent=7, borderColor=WINE, borderWidth=0,
+            borderLeftWidth=1.5, borderPadding=(1, 0, 1, 6), spaceBefore=2, spaceAfter=4)
+MINI = st("mini", fontSize=8.8, leading=10.5, spaceAfter=1.2, leftIndent=8, firstLineIndent=-7)
 
 
-def p(text, s=BODY):
-    return Paragraph(text, s)
+def p(text, style=BODY):
+    return Paragraph(text, style)
 
 
-def bullet(text):
-    return Paragraph(text, BULLET, bulletText="-")
+def q(text):
+    return p(text, QUESTION)
 
 
-def heading(text):
-    return Paragraph(text, H2)
+def thesis(text):
+    return p(text, THESIS)
 
 
-def sub(text):
-    return Paragraph(text, H3)
-
-
-def callout(text):
-    return Paragraph(text, CALLOUT)
-
-
-def tbl(rows, widths=None, header=True, font=7.1):
-    cooked = []
-    for ridx, row in enumerate(rows):
-        row_style = ParagraphStyle(
-            f"t{ridx}",
-            parent=SMALL,
-            fontName="Helvetica-Bold" if ridx == 0 and header else "Helvetica",
-            textColor=colors.white if ridx == 0 and header else INK,
-            fontSize=font,
-            leading=font + 1.15,
-        )
-        cooked.append([Paragraph(str(cell), row_style) for cell in row])
-    table = Table(cooked, colWidths=widths or [COL_W / len(rows[0])] * len(rows[0]), hAlign="LEFT")
-    commands = [
-        ("GRID", (0, 0), (-1, -1), 0.35, LINE),
-        ("VALIGN", (0, 0), (-1, -1), "TOP"),
-        ("LEFTPADDING", (0, 0), (-1, -1), 2.5),
-        ("RIGHTPADDING", (0, 0), (-1, -1), 2.5),
-        ("TOPPADDING", (0, 0), (-1, -1), 2),
-        ("BOTTOMPADDING", (0, 0), (-1, -1), 2),
-    ]
-    if header:
-        commands.append(("BACKGROUND", (0, 0), (-1, 0), ACCENT_2))
-    for idx in range(1 if header else 0, len(rows)):
-        if idx % 2 == 0:
-            commands.append(("BACKGROUND", (0, idx), (-1, idx), PALE))
-    table.setStyle(TableStyle(commands))
-    return table
-
-
-def keep(*items):
-    return KeepTogether(list(items))
+def item(term, definition):
+    return p(f"<b>{term}:</b> {definition}", MINI)
 
 
 def header_footer(canvas, doc):
     canvas.saveState()
-    canvas.setStrokeColor(LINE)
-    canvas.setLineWidth(0.35)
-    canvas.line(MARGIN_X, PAGE_H - 8.2 * mm, PAGE_W - MARGIN_X, PAGE_H - 8.2 * mm)
-    canvas.setFont("Helvetica-Bold", 7)
-    canvas.setFillColor(ACCENT)
-    canvas.drawString(MARGIN_X, PAGE_H - 6.4 * mm, "PSICOANÁLISIS FREUD - TERCER PARCIAL")
+    canvas.setStrokeColor(RULE)
+    canvas.setLineWidth(.35)
+    canvas.line(MX, PAGE_H - 7.2 * mm, PAGE_W - MX, PAGE_H - 7.2 * mm)
+    canvas.setFont("Helvetica-Bold", 6.8)
+    canvas.setFillColor(WINE)
+    canvas.drawString(MX, PAGE_H - 5.4 * mm, "PSICOANÁLISIS FREUD - TERCER PARCIAL")
     canvas.setFont("Helvetica", 6.5)
-    canvas.setFillColor(colors.HexColor("#5C6570"))
-    canvas.drawRightString(PAGE_W - MARGIN_X, PAGE_H - 6.4 * mm, "Machete de repaso express")
-    canvas.line(MARGIN_X, 7.6 * mm, PAGE_W - MARGIN_X, 7.6 * mm)
-    canvas.drawString(MARGIN_X, 5.1 * mm, "Cátedra Laznik - usar como disparador, no como respuesta telegráfica")
-    canvas.drawRightString(PAGE_W - MARGIN_X, 5.1 * mm, f"{doc.page} / 4")
+    canvas.setFillColor(MUTED)
+    canvas.drawRightString(PAGE_W - MX, PAGE_H - 5.4 * mm, "Repaso orientado a consignas")
+    canvas.drawRightString(PAGE_W - MX, 5.2 * mm, f"{doc.page} / 4")
     canvas.restoreState()
 
 
-frames = [
-    Frame(MARGIN_X, MARGIN_BOTTOM, COL_W, PAGE_H - MARGIN_TOP - MARGIN_BOTTOM, id="body", leftPadding=0, rightPadding=0, topPadding=0, bottomPadding=0),
-]
-
-doc = BaseDocTemplate(
-    str(OUT),
-    pagesize=A4,
-    leftMargin=MARGIN_X,
-    rightMargin=MARGIN_X,
-    topMargin=MARGIN_TOP,
-    bottomMargin=MARGIN_BOTTOM,
-    title="Machete de repaso express - tercer parcial",
-    author="Guía de estudio Psicoanálisis Freud - Cátedra Laznik",
-)
-doc.addPageTemplates(PageTemplate(id="single-column", frames=frames, onPage=header_footer))
-
+frame = Frame(MX, MB, PAGE_W - 2 * MX, PAGE_H - MT - MB,
+              leftPadding=0, rightPadding=0, topPadding=0, bottomPadding=0)
+doc = BaseDocTemplate(str(OUT), pagesize=A4, title="Machete de repaso - tercer parcial",
+                      author="Psicoanálisis Freud - Cátedra Laznik")
+doc.addPageTemplates(PageTemplate(id="clean", frames=[frame], onPage=header_footer))
 story = []
 
 
-def page_title(kicker, title):
-    story.append(p(kicker.upper(), style("kicker", fontName="Helvetica-Bold", fontSize=7.1, leading=8, textColor=ACCENT_2, alignment=TA_CENTER, spaceAfter=1)))
-    story.append(p(title, H1))
+def page(title):
+    story.append(p(title, TITLE))
 
 
-# PAGE 1
-page_title("Carilla 1", "MÁS ALLÁ: TRAUMA, SUEÑO Y REPETICIÓN")
-story += [
-    callout("Regla de respuesta: TESIS -> problema clínico -> mecanismo -> diferencia -> consecuencia."),
-    heading("1. Principio del placer y límite"),
-    bullet("No todo displacer está más allá: realidad posterga placer; represión produce satisfacción para una moción y displacer para el yo."),
-    bullet("Tres referentes heterogéneos: sueño traumático, fort-da y repetición en transferencia."),
-    bullet("Lo nuevo: insistencia que no se reconduce a placer para otro sistema."),
-    heading("2. Trauma económico"),
-    callout("Sorpresa -> falta de preparación -> ruptura antiestímulo -> cantidades no ligadas -> principio del placer abolido transitoriamente -> dominio y ligadura."),
-    p("El trauma es el <b>desvalimiento del aparato</b> ante excitación que no puede ligar. La angustia preparatoria habría movilizado investiduras; el terror testimonia que faltó."),
-    heading("3. Dos sueños"),
-    tbl([
-        ["Clásico", "Traumático"],
-        ["Deseo reprimido", "Excitación no ligada"],
-        ["Condensa, desplaza, figura", "Repite más literalmente"],
-        ["Cumple deseo deformado", "No hay deseo reconocible como motor"],
-        ["Guardián del dormir", "Terror y despertar"],
-    ], widths=[COL_W * 0.5, COL_W * 0.5]),
-    p("El sueño traumático intenta producir <b>retroactivamente preparación y ligadura</b>. No elimina la teoría del deseo: revela una tarea anterior al principio del placer."),
-    heading("4. Fort-da"),
-    bullet("Juego completo: fort + da; pasivo -> activo; el <b>da</b> da placer directo."),
-    bullet("Problema: se repite más y también solo el <b>fort</b>, la partida displacentera."),
-    bullet("No negar el placer del juego: explicar por qué no alcanza para la insistencia."),
-    heading("5. Dos repeticiones"),
-    tbl([
-        ["Agieren", "Compulsión"],
-        ["Actúa lo reprimido", "Insiste lo no ligado"],
-        ["Placer mocional/displacer yo", "También fracaso sin placer previo"],
-        ["Principio del placer", "Abre un más allá"],
-    ], widths=[COL_W * 0.5, COL_W * 0.5]),
-    heading("6. Dualismos"),
-    bullet("1°: autoconservación (antes 'yoicas') / sexuales."),
-    bullet("Narcisismo: libido yoica/de objeto = destinos de libido sexual, no dualismo."),
-    bullet("2°: Eros liga y reúne / muerte desliga, repite, restaura estado anterior."),
-    heading("7. Masoquismo"),
-    bullet("Erógeno primario: resto interior de muerte ligado por libido."),
-    bullet("Femenino: fantasías pasivas, infantiles, castigadas."),
-    bullet("Moral: satisfacción en padecer -> castigo -> reacción terapéutica negativa."),
-]
-story.append(PageBreak())
+page("MÁS ALLÁ: TRAUMA, SUEÑO Y REPETICIÓN")
+q1 = "¿Por qué Freud postula un más allá del principio del placer?"
+story += [q(q1), thesis("Tesis: ciertos fenómenos repiten displacer que no puede explicarse como placer para otro sistema. Freud no elimina el principio del placer: descubre una tarea más originaria, ligar la excitación para que aquel pueda operar."),
+    p("Hasta 1920, el aparato parecía regulado por la disminución de tensión. El displacer corriente no refutaba esa tesis: el principio de realidad posterga la satisfacción y la represión vuelve displacentero para el yo lo que satisface a una moción inconsciente. Pero los <b>sueños traumáticos</b>, el <b>fort-da</b> y la <b>compulsión de repetición en transferencia</b> muestran una insistencia que no siempre puede reconducirse a una ganancia de placer previa."),
+    p("El nuevo trauma se define económicamente: la sorpresa y la falta de preparación angustiada permiten que una magnitud excesiva atraviese la protección antiestímulo. Entran cantidades no ligadas y el yo queda en desvalimiento. El principio del placer queda transitoriamente abolido; primero hay que dominar y ligar esa excitación."),
+    q("¿Cómo reformula esto la teoría del sueño?"),
+    p("En la teoría clásica, el sueño realiza de manera desfigurada un <b>deseo reprimido</b>. Condensación, desplazamiento y figurabilidad permiten una satisfacción inconsciente compatible con seguir durmiendo: el sueño es guardián del dormir. En el sueño traumático, en cambio, retorna con terror una escena que nunca fue placentera para sistema alguno y el soñante despierta."),
+    p("No conviene decir simplemente que esos sueños carecen de función o son totalmente ininterpretables. Su repetición intenta producir retroactivamente la preparación que faltó y <b>ligar</b> la excitación. La aparente excepción revela una operación previa al cumplimiento de deseo y al gobierno del principio del placer."),
+    q("¿Qué muestran el fort-da y la transferencia?"),
+    p("En el juego, el niño transforma en actividad la partida pasivamente sufrida. El retorno, <i>da</i>, ofrece placer directo; pero Freud subraya que se repite con mayor frecuencia el <i>fort</i>, la desaparición displacentera. El placer del juego completo no agota la insistencia del primer acto."),
+    p("También hay que distinguir el <i>agieren</i> de 1914 -actuar lo reprimido que no se recuerda- de la compulsión de repetición de 1920, que incluye fracasos, vínculos y padecimientos nunca placenteros. Esta última prepara el segundo dualismo: <b>Eros</b> liga y reúne; la <b>pulsión de muerte</b> desliga y tiende a restaurar un estado anterior. El primer dualismo era autoconservación/sexuales; libido yoica/de objeto son destinos de la libido sexual, no ese dualismo."),
+    q("¿Cómo se articula la pulsión de muerte con el masoquismo?"),
+    p("La libido liga parte de la pulsión de muerte y desvía destrucción hacia afuera. Un resto permanece ligado en el interior: <b>masoquismo erógeno primario</b>. Sobre esa base se distinguen el masoquismo femenino -fantasías de posición pasiva, infantil y castigada- y el <b>masoquismo moral</b>, donde el padecimiento mismo satisface una necesidad de castigo. Esta última articulación permite comprender culpa inconsciente y reacción terapéutica negativa."), PageBreak()]
 
-# PAGE 2
-page_title("Carilla 2", "SEXUALIDAD, EDIPO Y CASTRACIÓN")
-story += [
-    heading("1. Organizaciones sexuales"),
-    tbl([
-        ["Org.", "Operación", "Problema"],
-        ["Oral", "incorporar", "dentro/fuera; identificación"],
-        ["Sádico-anal", "retener/expulsar", "actividad/pasividad; ambivalencia"],
-        ["Fálica", "primado del falo", "fálico/castrado; Edipo"],
-        ["Latencia", "represión/diques", "no es fase equivalente"],
-        ["Genital", "coordinación postpuberal", "no borra fases previas"],
-    ], widths=[COL_W * .20, COL_W * .30, COL_W * .50], font=7.1),
-    p("<b>Fijación</b>: libido retenida en una satisfacción. <b>Regresión</b>: retorno a organización, objeto o modo anterior ante conflicto."),
-    heading("2. Fase fálica"),
-    bullet("Organización genital infantil, no genitalidad adulta."),
-    bullet("Premisa universal del pene: inicialmente se supone que todos poseen uno."),
-    bullet("Diferencia interpretada como <b>fálico/castrado</b>, no aún masculino/femenino."),
-    bullet("Falo organiza tener, perder, dar y faltar; no es mero dato anatómico."),
-    heading("3. Asimetría edípica"),
-    tbl([
-        ["Varón", "Niña"],
-        ["Madre objeto; padre rival/identificación", "Ligazón preedípica con madre"],
-        ["Amenaza + diferencia = castración posible", "Interpreta perjuicio consumado"],
-        ["Castración -> salida/sepultamiento", "Castración -> entrada al Edipo"],
-        ["Objetos -> identificaciones -> superyó", "Reproche madre; madre -> padre"],
-        ["Salida más definida", "Pene -> hijo; salida menos definida"],
-    ], widths=[COL_W * .5, COL_W * .5], font=7.1),
-    callout("Tesis: varón = amenaza de pérdida que saca del Edipo. Niña = castración interpretada como consumada que permite entrar."),
-    heading("4. Preedípico femenino"),
-    p("La madre es primer objeto para ambos. En la niña, la ligazón es larga, intensa y ambivalente. El ingreso al Edipo exige explicar extrañamiento de la madre, cambio de objeto madre -> padre y cambio de zona clítoris -> vagina."),
-    heading("5. Pegan a un niño"),
-    bullet("1. <b>El padre pega a un niño</b>: rival odiado; 'me ama a mí'."),
-    bullet("2. <b>Soy pegado por el padre</b>: ICC, construida; culpa + regresión sádico-anal; castigo y sustituto de ser amado."),
-    bullet("3. <b>Los niños son pegados</b>: comunicada; agente impersonal, varios niños, espectador; apariencia sádica, satisfacción masoquista."),
-    callout("Análisis: parte de 3, reconstruye 1 y construye 2. Fantasía = cicatriz del Edipo y fijación, no recuerdo material."),
-    heading("6. Errores frecuentes"),
-    bullet("Anatomía produce directamente posición psíquica."),
-    bullet("Fálica = genital adulta; castración afecta igual a ambos."),
-    bullet("Niña entra directamente al Edipo con el padre."),
-    bullet("Usar 'ser el falo de la madre' sin reconstrucción freudiana."),
-]
-story.append(PageBreak())
+page("SEXUALIDAD, EDIPO Y CASTRACIÓN")
+story += [q("¿Cómo se relacionan fase fálica, Edipo y castración?"), thesis("Tesis: la fase fálica organiza la diferencia bajo la oposición fálico/castrado. El complejo de castración interviene de modo asimétrico: en el varón conduce al sepultamiento del Edipo; en la niña posibilita su entrada."),
+    p("Las organizaciones oral, sádico-anal y fálica no son escalones que desaparecen. Cada una ordena satisfacción y objeto: incorporación; retención-expulsión y actividad-pasividad; finalmente primado del falo. <b>Fijación</b> es la persistencia privilegiada de libido en una modalidad; <b>regresión</b>, el retorno a ella ante un conflicto. La latencia introduce represión y diques; la organización genital postpuberal coordina sin borrar lo anterior."),
+    p("En la fase fálica rige la premisa universal del pene: la diferencia anatómica todavía se interpreta como fálico/castrado, no como masculino/femenino. El falo organiza tener, perder, dar y faltar; no debe reducirse al órgano ni conviene trasladar sin explicación fórmulas lacanianas a una respuesta sobre Freud."),
+    q("¿En qué consiste la asimetría del Edipo?"),
+    p("En el <b>varón</b>, la madre es objeto y el padre rival y modelo identificatorio. La amenaza de castración se vuelve eficaz al enlazarse con la percepción de la diferencia. Ante la alternativa entre conservar el pene y sostener las investiduras incestuosas, abandona los objetos edípicos: la castración <b>saca</b> del Edipo. Las investiduras se sustituyen por identificaciones que participan en la formación del superyó."),
+    p("En la <b>niña</b>, el primer objeto también es la madre. La ligazón preedípica es larga, intensa y ambivalente. La diferencia se interpreta como perjuicio consumado: herida narcisista, envidia del pene y reproche a la madre. Por eso la castración <b>introduce</b> al Edipo: exige extrañarse de la madre, cambiar de objeto hacia el padre y, en la elaboración freudiana, desplazar pene por hijo. La salida es menos tajante y puede producirse por desilusión."),
+    q("¿Cómo responder sobre «Pegan a un niño»?"),
+    p("La fantasía se reconstruye en tres tiempos. 1) «El padre pega al niño odiado»: significa que ama al sujeto. 2) «Soy pegado por el padre»: fase inconsciente y construida, donde culpa y regresión sádico-anal convierten el castigo en sustituto de ser amado. 3) «Pegan a unos niños»: forma comunicada, con agente impersonal y satisfacción de apariencia sádica pero posición masoquista. En análisis se parte de la tercera, se reconstruye la primera y se construye la segunda. Es cicatriz del Edipo y fijación de satisfacción, no recuerdo material recuperado."), PageBreak()]
 
-# PAGE 3
-page_title("Carilla 3", "SEGUNDA TÓPICA Y RESISTENCIAS")
-story += [
-    heading("1. Dos tópicas"),
-    bullet("1ª: relación de contenidos con conciencia - Icc / Prcc / Cc."),
-    bullet("2ª: instancias del conflicto, defensa y satisfacción - ello / yo / superyó."),
-    callout("No hay mapeo uno a uno. Todo ello es ICC; no todo ICC es ello: también hay yo y superyó ICC."),
-    heading("2. Tercer inconsciente"),
-    p("Problema: <b>lo reprimido busca retornar</b>, por eso no puede ser la fuerza que resiste. La resistencia parte del yo sin que el paciente lo sepa -> parte del yo es ICC."),
-    tbl([
-        ["Descriptivo", "Dinámico", "Estructural"],
-        ["no Cc ahora; latente puede devenir", "reprimido por una fuerza; retorna deformado", "no necesariamente reprimido; atraviesa instancias"],
-    ], widths=[COL_W/3]*3, font=7),
-    callout("Todo lo reprimido es ICC; no todo ICC es reprimido. La segunda tópica complementa, no elimina, la primera."),
-    heading("3. Instancias"),
-    bullet("<b>Ello:</b> todo ICC; sede pulsional; libido; reprimido + nunca reprimido; procesos no ligados."),
-    bullet("<b>Yo:</b> parte del ello modificada por realidad; corporal; síntesis, palabra, motilidad; parte ICC; almácigo de angustia."),
-    bullet("<b>Superyó:</b> heredero del Edipo + identificaciones tempranas; ley/ideal y mandato cruel; afinidad con ello."),
-    heading("4. Potencia, endeblez y vasallajes"),
-    p("<b>Potencia:</b> liga, sintetiza, prueba realidad, gobierna motilidad, produce señal y defensa. <b>Endeblez:</b> toma energía del ello, no es soberano y media exigencias incompatibles."),
-    tbl([
-        ["Amo", "Exigencia", "Angustia"],
-        ["Mundo", "realidad/peligro", "realista"],
-        ["Ello", "pulsional", "neurótica"],
-        ["Superyó", "ideal/castigo", "conciencia moral"],
-    ], widths=[COL_W*.25, COL_W*.43, COL_W*.32], font=7),
-    heading("5. Cinco resistencias"),
-    tbl([
-        ["Inst.", "Resistencia", "Clave"],
-        ["Yo", "represión", "contrainvestidura mantiene apartado"],
-        ["Yo", "transferencia", "conflicto actuado; erótica/hostil"],
-        ["Yo", "ganancia secundaria", "ventajas agregadas al síntoma"],
-        ["Ello", "compulsión", "vías insisten; reelaborar"],
-        ["Superyó", "castigo", "culpa ICC; reacción negativa"],
-    ], widths=[COL_W*.17, COL_W*.31, COL_W*.52], font=6.9),
-    p("Interpretar ayuda especialmente con resistencias yoicas, pero no las levanta automáticamente. Ello y superyó no ceden sólo haciendo consciente una representación."),
-    heading("6. No confundir"),
-    bullet("Ganancia primaria = satisfacción pulsional <i>en</i> síntoma. Secundaria = ventajas <i>con</i> síntoma ya formado."),
-    bullet("Culpa Cc != necesidad ICC de castigo: puede sentirse enfermo, no culpable."),
-    bullet("Transferencia tierna puede ser motor; erótica/hostil, obstáculo."),
-]
-story.append(PageBreak())
+page("SEGUNDA TÓPICA Y RESISTENCIAS")
+story += [q("¿Cómo se relacionan primera y segunda tópica?"), thesis("Tesis: no existe un mapeo uno a uno. Icc/Prcc/Cc describe la relación de los contenidos con la conciencia; ello/yo/superyó localiza instancias, conflictos y resistencias. La segunda tópica complementa, no reemplaza, a la primera."),
+    p("El inconsciente <b>descriptivo</b> es lo actualmente no consciente; lo latente puede devenir consciente. El inconsciente <b>dinámico</b> es lo mantenido fuera de la conciencia por represión y que retorna deformado. La clínica obliga a agregar una dimensión <b>estructural</b>: lo inconsciente no se reduce a lo reprimido."),
+    p("Lo reprimido pugna por retornar y, por eso, no puede ser la fuerza que se opone a su retorno. La resistencia parte del yo sin que el paciente lo sepa: hay yo inconsciente, y también superyó inconsciente. Fórmula central: <b>todo lo reprimido es inconsciente, pero no todo lo inconsciente es reprimido</b>. El ello es enteramente inconsciente, pero no todo lo inconsciente es ello."),
+    q("¿Cómo caracteriza Freud al yo y sus vasallajes?"),
+    p("El <b>ello</b> es sede pulsional, reservorio libidinal y contiene tanto lo reprimido como lo nunca reprimido. El <b>yo</b> es una parte del ello modificada por la realidad, corporal y parcialmente inconsciente; liga, sintetiza, prueba realidad, gobierna la motilidad y produce la señal de angustia. El <b>superyó</b>, heredero del Edipo y sedimento de identificaciones tempranas, encarna ideal y prohibición, pero también puede actuar como mandato cruel."),
+    p("El yo aparece en su potencia porque organiza y defiende, y en su endeblez porque toma su energía del ello y debe servir a tres amos: mundo exterior, ello y superyó. De allí surgen, respectivamente, peligro realista, exigencia pulsional y amenaza de castigo o pérdida del amor del superyó."),
+    q("¿Cuáles son las cinco resistencias?"),
+    p("Tres son yoicas. La <b>resistencia de represión</b> sostiene mediante contrainvestidura lo apartado. La <b>resistencia de transferencia</b> actualiza el conflicto con el analista; la vertiente erótica u hostil puede interrumpir la asociación. La <b>ganancia secundaria</b> reúne ventajas que el yo obtiene con el síntoma ya formado; no debe confundirse con la satisfacción pulsional primaria en el síntoma."),
+    p("La resistencia del <b>ello</b> es la compulsión de repetición: antiguas vías y fijaciones persisten incluso después de interpretar, por lo cual requieren reelaboración. La del <b>superyó</b> es la necesidad de castigo, ligada a culpa inconsciente y reacción terapéutica negativa. Interpretar representaciones conserva valor, sobre todo ante resistencias yoicas, pero no levanta automáticamente lo que procede del ello o del superyó."),
+    q("Distinciones que suelen decidir la respuesta"),
+    p("Ganancia primaria no es ganancia secundaria: la primera es satisfacción pulsional <i>en</i> el síntoma; la segunda son ventajas que el yo obtiene <i>con</i> el síntoma ya constituido. Culpa consciente tampoco equivale a necesidad inconsciente de castigo: el paciente puede sentirse enfermo, no culpable. Y transferencia no significa siempre resistencia: la vertiente tierna puede sostener el trabajo, mientras las formas erótica u hostil pueden obstaculizarlo."), PageBreak()]
 
-# PAGE 4
-page_title("Carilla 4", "ANGUSTIA Y ARTICULACIONES")
-story += [
-    heading("1. Tres teorías de angustia"),
-    tbl([
-        ["Versión", "Fórmula", "Clave"],
-        ["1ª", "excitación sexual somática no elaborada -> angustia", "neurosis actuales; sin represión"],
-        ["2ª", "libido afectada por represión -> angustia", "angustia producto"],
-        ["3ª", "peligro -> señal -> defensa/represión -> síntoma", "angustia causa represión"],
-    ], widths=[COL_W*.13, COL_W*.51, COL_W*.36], font=6.8),
-    heading("2. Automática y señal"),
-    tbl([
-        ["Automática", "Señal"],
-        ["situación traumática efectiva", "anticipa condición de peligro"],
-        ["yo desbordado; desvalimiento", "pequeña reproducción por el yo"],
-        ["cantidad no ligada; pasiva", "moviliza defensa"],
-    ], widths=[COL_W*.5, COL_W*.5], font=7.1),
-    p("Serie: desvalimiento económico -> pérdida del objeto -> castración -> pérdida del amor del superyó. Núcleo: separación + riesgo de desborde."),
-    heading("3. Hans"),
-    callout("Mociones edípicas -> peligro de castración -> angustia-señal -> represión -> caballo -> fobia. Convierte peligro interno inevitable en objeto externo evitable; precio: inhibición."),
-    heading("4. Articulaciones de alta frecuencia"),
-    bullet("<b>Sueños:</b> deseo/trabajo/guardián -> trauma no ligado/repetición/ligadura previa."),
-    bullet("<b>Trauma:</b> afecto no abreaccionado -> VSPT, dos tiempos y realidad psíquica -> sorpresa, ruptura y no ligadura."),
-    bullet("<b>Repetición:</b> agieren/retorno reprimido -> compulsión/no ligado -> resistencia del ello/reelaboración."),
-    bullet("<b>Tópicas:</b> Icc-Prcc-Cc describe conciencia -> yo-ello-superyó localiza instancias y resistencias."),
-    bullet("<b>Edipo-superyó:</b> sepultamiento -> objetos abandonados -> identificaciones -> superyó; crueldad excede ley."),
-    bullet("<b>Masoquismo-resistencia:</b> resto de muerte ligado -> primario -> moral -> castigo -> superyó -> reacción negativa."),
-    bullet("<b>Trauma-angustia:</b> desvalimiento/no ligadura -> automática; peligro anticipado -> señal -> defensa."),
-    heading("5. Frases de cierre"),
-    bullet("La reformulación no elimina lo anterior: muestra su límite y agrega una tarea más originaria."),
-    bullet("Articular no es identificar: se conserva X, cambia Y y la consecuencia es Z."),
-    bullet("La segunda tópica no sustituye a la primera: redistribuye lo ICC entre instancias."),
-    bullet("La interpretación conserva valor, pero no basta ante ello y superyó."),
-    heading("6. Errores frecuentes"),
-    p("Todo displacer = más allá. Represión = ligadura. Sueño traumático totalmente ininterpretable. Pulsiones yoicas = libido yoica. Ello = antiguo Icc. Yo = Cc. Automática = señal. Satisfacción sintomática = ganancia secundaria. Interpretar levanta toda resistencia."),
-    heading("7. Antes de entregar"),
-    callout("¿Definí problema? ¿Ubiqué texto/momento? ¿Expliqué mecanismo? ¿Marqué diferencia? ¿Respondí todos los verbos? ¿Cerré retomando tesis?"),
-]
+page("ANGUSTIA + DEFINICIONES PARA RECORDAR")
+story += [q("¿Qué cambia en la tercera teoría de la angustia?"), thesis("Tesis: Freud invierte la causalidad de la segunda teoría. Ya no es la represión la que produce angustia; el yo anticipa un peligro mediante angustia-señal y pone en marcha represión y defensa. A la vez conserva una angustia automática ante el desvalimiento efectivo."),
+    p("Primera teoría: excitación sexual somática no elaborada se transforma en angustia, especialmente en las neurosis actuales. Segunda: la libido afectada por la represión se muda en angustia. Tercera: condición de peligro -> angustia-señal en el yo -> defensa/represión -> síntoma. La reformulación no borra todos los desarrollos anteriores, sino que redistribuye causas y funciones."),
+    p("La <b>angustia automática</b> corresponde a una situación traumática efectiva: el yo queda pasivamente desbordado por cantidad no ligada. La <b>señal</b> es una reproducción atenuada y anticipatoria producida por el yo para evitar ese desborde. Las condiciones de peligro siguen la serie desvalimiento, pérdida de objeto, castración y pérdida del amor del superyó. En Hans: mociones edípicas -> peligro de castración -> señal -> represión -> desplazamiento al caballo -> fobia; así un peligro interno inevitable se vuelve externo y evitable, al precio de una inhibición."),
+    p("<b>Puente trauma-angustia:</b> el trauma nombra desvalimiento y no ligadura; la angustia automática es su irrupción. Cuando una condición semejante puede anticiparse, el yo produce señal y moviliza defensa."),
+    q("Lista mnemotécnica de definiciones"),
+    item("Ligadura", "operación que domina cantidades y las integra en conexiones representacionales; condición para el principio del placer."),
+    item("Trauma 1920", "sorpresa + falta de preparación + ruptura antiestímulo + exceso no ligado + desvalimiento."),
+    item("Compulsión de repetición", "insistencia de experiencias y vías más allá de una satisfacción placentera previa."),
+    item("Eros / muerte", "ligar, reunir y complejizar / desligar y tender a restaurar un estado anterior."),
+    item("Fijación / regresión", "persistencia de libido en una modalidad / retorno a ella ante conflicto."),
+    item("Fase fálica", "organización genital infantil bajo primado del falo y oposición fálico/castrado."),
+    item("Castración", "amenaza que saca al varón del Edipo; perjuicio supuesto consumado que introduce a la niña."),
+    item("ICC estructural", "sectores inconscientes no necesariamente reprimidos en ello, yo y superyó."),
+    item("Superyó", "heredero del Edipo e identificaciones; ideal, ley y posible mandato cruel."),
+    item("Vasallajes", "dependencia del yo respecto del mundo, el ello y el superyó."),
+    item("Ganancia primaria/secundaria", "satisfacción pulsional en el síntoma / ventajas agregadas obtenidas con él."),
+    item("Reacción terapéutica negativa", "empeoramiento ante la mejoría, ligado a necesidad inconsciente de castigo."),
+    item("Angustia automática/señal", "desborde traumático efectivo / anticipación atenuada que moviliza defensa."),
+    Spacer(1, 2), thesis("Antes de entregar: tesis -> texto/momento -> problema clínico -> mecanismo -> diferencia con formulación anterior -> consecuencia. Articular no es identificar: qué se conserva, qué cambia y qué permite explicar.")]
 
 doc.build(story)
 print(OUT)

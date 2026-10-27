@@ -137,3 +137,50 @@ Ambas concepciones sitúan algo que excede los recursos disponibles del aparato 
 - decir que en *Más allá* todo trauma carece definitivamente de representación;
 - presentar las dos teorías como sinónimos;
 - olvidar el papel posterior de la fantasía y la realidad psíquica.
+
+## Modelo 4 — contenido nuevo
+
+### Consigna
+
+Explique la génesis del superyó en *El yo y el ello* y caracterice sus dos dimensiones. Articule su vertiente cruel con la necesidad inconsciente de castigo y la reacción terapéutica negativa.
+
+### Esquema
+
+1. Diferenciación del yo con raíces en el ello.
+2. Sepultamiento del Edipo: investiduras de objeto sustituidas por identificaciones.
+3. Padre muerto: ley, prohibición e ideal.
+4. Identificaciones iniciales y padre vivo: cercanía al ello y exigencia sin medida.
+5. Superyó sádico + yo masoquista.
+6. Necesidad de castigo, satisfacción en la enfermedad y reacción terapéutica negativa.
+
+```mermaid
+flowchart TD
+  A["Superyó"] --> B["Heredero del Edipo"]
+  A --> C["Identificaciones iniciales"]
+  B --> D["Ley, prohibición e ideal"]
+  C --> E["Afinidad con el ello"]
+  E --> F["Exigencia sin medida"]
+  F --> G["Necesidad de castigo"]
+  G --> H["Satisfacción en la enfermedad"]
+  H --> I["Reacción terapéutica negativa"]
+```
+
+### Desarrollo
+
+En *El yo y el ello*, Freud caracteriza al superyó como una diferenciación del yo que conserva una estrecha relación con el ello. Su génesis presenta dos vertientes. Por una parte, es heredero del complejo de Edipo: las investiduras de los objetos parentales abandonados son sustituidas por identificaciones. Esta vertiente, relacionada por la cátedra con el padre muerto, inscribe la ley, la prohibición y el ideal.
+
+Por otra parte, el superyó se funda en identificaciones iniciales de la prehistoria personal, producidas cuando el yo todavía era endeble y anteriores a las elecciones de objeto plenamente constituidas. Esta vertiente, asociada con el padre vivo, conserva mayor afinidad con el ello y puede exigir una satisfacción pulsional total y sin medida.
+
+En articulación con la pulsión de muerte, el superyó puede volverse hipermoral y cruel: ocupa una posición sádica frente a un yo masoquista. De allí provienen la necesidad inconsciente de castigo y la satisfacción en el padecimiento. La enfermedad adquiere entonces un valor para el paciente y, cuando el tratamiento amenaza con quitarle esa satisfacción, puede empeorar al mejorar: es la reacción terapéutica negativa. El paciente no se siente conscientemente culpable, sino enfermo.
+
+### Fórmula de memoria
+
+> Edipo → identificaciones → ley. Identificaciones iniciales → cercanía al ello → exigencia sin medida. Superyó cruel + yo masoquista → castigo → enfermedad → reacción terapéutica negativa.
+
+### Errores frecuentes
+
+- afirmar que el superyó es simplemente una parte del ello;
+- sostener que se funda en la culpa consciente, en vez de entender la culpa como uno de sus efectos;
+- presentar sus dos vertientes como dos superyós separados;
+- olvidar la posición masoquista del yo al explicar la necesidad de castigo;
+- interpretar la reacción terapéutica negativa como una decisión consciente de sabotear la cura.

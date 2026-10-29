@@ -48,6 +48,7 @@ Versión iterativa basada en las clases transcriptas hasta el 15 de octubre de 2
 - Resistencias y obstáculos en la cura.
 - Tercera teoría de la angustia.
 - Mapas de articulación acumulativa.
+- Matriz de conflicto, trauma, síntoma, sueño, inconsciente, aparato, repetición, resistencia, cura y obstáculo en los tres momentos.
 
 ### Herramientas de estudio
 

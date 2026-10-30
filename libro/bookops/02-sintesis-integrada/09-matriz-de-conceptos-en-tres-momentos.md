@@ -1,6 +1,6 @@
 # Matriz de conceptos en tres momentos
 
-Este cuadro reconstruye el movimiento conceptual entre los tres parciales. No representa tres sistemas cerrados ni una cronología lineal: Freud conserva formulaciones anteriores, modifica su alcance y agrega problemas nuevos.
+Este cuadro reconstruye el movimiento conceptual entre los tres parciales. La cátedra toma como cortes de referencia **1893**, **1905** y **1920** —este último marcado por *Más allá del principio del placer*—. No representan tres sistemas cerrados ni fronteras cronológicas rígidas: Freud conserva formulaciones anteriores, modifica su alcance y agrega problemas nuevos.
 
 La regla para una articulación es:
 
@@ -8,7 +8,7 @@ La regla para una articulación es:
 
 ## Cuadro comparativo
 
-| Concepto | Primer momento | Segundo momento | Tercer momento |
+| Concepto | Primer momento — 1893 | Segundo momento — 1905 | Tercer momento — 1920 |
 |---|---|---|---|
 | **Conflicto** | El yo se defiende de una representación inconciliable. Defensa, separación entre representación y afecto, conversión o falso enlace. | Primer dualismo: pulsiones yoicas o de autoconservación vs. pulsiones sexuales. Luego, pseudodualismo entre libido yoica y libido de objeto: no son dos energías diferentes, sino una única libido según dónde se localiza. | Conflicto entre Eros y pulsión de muerte y entre instancias: ello, yo, superyó y realidad. El yo media exigencias heterogéneas y no es soberano. |
 | **Trauma** | Vivencia cargada cuyo afecto no fue abreaccionado; luego, vivencia sexual prematura que adquiere eficacia retroactiva en un segundo tiempo. Predominan recuerdo, afecto, defensa y representación. | Cae la seducción como explicación universal. Fantasía y realidad psíquica median entre sexualidad infantil, fijación y síntoma. La retroacción conserva valor. | Trauma económico: sorpresa, falta de preparación, ruptura antiestímulo, exceso no ligado y desvalimiento. Antes del placer se requiere dominio y ligadura. |
@@ -23,7 +23,7 @@ La regla para una articulación es:
 
 ## Versión mínima para memorizar el movimiento
 
-| Concepto | 1.º | 2.º | 3.º |
+| Concepto | 1.º — 1893 | 2.º — 1905 | 3.º — 1920 |
 |---|---|---|---|
 | **Conflicto** | yo / representación inconciliable | yoicas-autoconservación / sexuales → libido yoica / de objeto | instancias + Eros/muerte |
 | **Trauma** | recuerdo + afecto + dos tiempos | fantasía + realidad psíquica + fijación | exceso no ligado + ligadura |
@@ -38,7 +38,7 @@ La regla para una articulación es:
 
 ## Líneas de articulación de alta probabilidad
 
-### Sueño: primer y tercer momento
+### Sueño: primer momento (1893) y tercer momento (1920)
 
 ```text
 Deseo reprimido → trabajo del sueño → cumplimiento desfigurado → guardián del dormir
@@ -48,7 +48,7 @@ Trauma no ligado → repetición con terror → preparación/ligadura → desper
 
 **Tesis:** el sueño traumático no elimina la doctrina del deseo; revela una tarea previa que puede hacer fracasar su función.
 
-### Inconsciente: segundo y tercer momento
+### Inconsciente: segundo momento (1905) y tercer momento (1920)
 
 ```text
 Inconsciente dinámico = reprimido por una fuerza
@@ -60,7 +60,7 @@ Inconsciente estructural = no necesariamente reprimido
 
 **Tesis:** la segunda tópica no sustituye a la primera; distribuye lo inconsciente entre ello, yo y superyó.
 
-### Repetición: segundo y tercer momento
+### Repetición: segundo momento (1905) y tercer momento (1920)
 
 ```text
 Agieren = actúa lo reprimido que no recuerda
